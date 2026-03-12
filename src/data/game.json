@@ -1,0 +1,429 @@
+{
+  "meta": {
+    "title": "Carnivorous Plants | Franklin Park Conservatory",
+    "headerTitle": "Franklin Park Conservatory",
+    "headerSubtitle": "School Program Classroom Extension",
+    "footerText": "Franklin Park Conservatory & Botanical Gardens — School Program Classroom Extension"
+  },
+  "theme": {
+    "colors": {
+      "primary": "#572700",
+      "accent": "#D5D10E",
+      "highlight": "#F8971D",
+      "secondary": "#A1D2DD",
+      "muted": "#77833C",
+      "brand": "#006682",
+      "textPrimary": "#3A2000",
+      "bgLight": "#FDF8F0"
+    }
+  },
+  "images": {
+    "logo": null,
+    "homeBackground": { "src": "images/slide-01-bog-forest-background.jpg", "alt": "Bog forest background" },
+    "mascot": null,
+    "sidekick": null
+  },
+  "navigation": {
+    "subjectScreenIds": ["bladderwort", "pitcher-plant", "sundew", "venus-flytrap"],
+    "homeScreenId": "home",
+    "sceneScreenId": "scene",
+    "endScreenId": "end"
+  },
+  "screens": {
+    "home": {
+      "type": "home",
+      "heading": "Carnivorous Plants",
+      "tagline": "Discover the fascinating world of plants that eat bugs!",
+      "backgroundImage": { "src": "images/slide-01-bog-forest-background.jpg", "alt": "Bog forest" },
+      "buttons": [
+        { "label": "Start Exploring", "target": "scene", "variant": "primary" },
+        { "label": "Tutorial", "target": "tutorial", "variant": "secondary" },
+        { "label": "Teacher's Guide", "target": "teachers-guide", "variant": "secondary" }
+      ]
+    },
+    "tutorial": {
+      "type": "tutorial",
+      "backTarget": "home",
+      "headerTitle": "Tutorial",
+      "heading": "How to Explore",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Enter the Bog",
+          "body": "Click \"Start Exploring\" to visit an interactive bog scene filled with carnivorous plants."
+        },
+        {
+          "number": 2,
+          "title": "Click on Plants",
+          "body": "Each plant in the bog is clickable. Select one to learn more about it."
+        },
+        {
+          "number": 3,
+          "title": "Discover Fun Facts",
+          "body": "Read through each plant's information. Click \"Learn More\" to reveal additional facts and details."
+        },
+        {
+          "number": 4,
+          "title": "Return to the Bog",
+          "body": "Use the back arrow to return to the bog and explore another plant. Visit all four to complete your journey!"
+        }
+      ],
+      "cta": { "label": "Start Exploring", "target": "scene", "variant": "primary" }
+    },
+    "teachers-guide": {
+      "type": "guide-hub",
+      "backTarget": "home",
+      "headerTitle": "Teacher's Guide",
+      "heading": "Teacher's Guide",
+      "intro": "Use these resources to extend the carnivorous plants lesson in your classroom.",
+      "cards": [
+        {
+          "icon": "📚",
+          "label": "Additional Resources",
+          "description": "Books & videos for further learning",
+          "target": "additional-resources"
+        },
+        {
+          "icon": "💡",
+          "label": "Tips & Tricks",
+          "description": "Ways to play & learning standards",
+          "target": "tips-tricks"
+        },
+        {
+          "icon": "✏️",
+          "label": "Prompts & Projects",
+          "description": "Writing prompts & project ideas",
+          "target": "prompts-projects"
+        }
+      ]
+    },
+    "additional-resources": {
+      "type": "resources",
+      "backTarget": "teachers-guide",
+      "headerTitle": "Additional Resources",
+      "sections": [
+        {
+          "heading": "Books",
+          "columns": ["Title", "Author", "Age Range"],
+          "columnCount": 3,
+          "rows": [
+            { "cells": ["Carnivorous Plants", "Dan Torre", "Adult"], "italic": [true, false, false] },
+            { "cells": ["The Savage Garden", "Peter D'Amato", "Adult"], "italic": [true, false, false] },
+            { "cells": ["Plantopedia", "Lauren Camilleri & Sophia Kaplan", "Adult"], "italic": [true, false, false] },
+            { "cells": ["How Plants Work", "Linda Chalker-Scott", "Adult"], "italic": [true, false, false] },
+            { "cells": ["What is a Plant?", "Bobbie Kalman", "Ages 5–7"], "italic": [true, false, false] },
+            { "cells": ["Plants that Eat Bugs", "Monica Russo", "Ages 4–8"], "italic": [true, false, false] },
+            { "cells": ["Venus Flytraps, Bladderworts and Other Wild and Amazing Plants", "Monica Russo", "Ages 4–8"], "italic": [true, false, false] }
+          ]
+        },
+        {
+          "heading": "Videos & Documentaries",
+          "columns": ["Title", "Description"],
+          "columnCount": 2,
+          "rows": [
+            { "cells": ["Attenborough: Eaters that Eat Animals – BBC", "Documentary about carnivorous plants"], "italic": [true, false] },
+            { "cells": ["Venus Flytraps: Jaws of Death – National Geographic", "Short documentary on Venus flytraps"], "italic": [true, false] },
+            { "cells": ["Plant-Eating Sundew – National Geographic", "Short documentary on sundews"], "italic": [true, false] },
+            { "cells": ["Carnivorous Plants – SciShow Kids", "Kid-friendly video about carnivorous plants"], "italic": [true, false] },
+            { "cells": ["The Plants that Eat Animals – It's OK to be Smart", "Educational video on plant carnivory"], "italic": [true, false] }
+          ]
+        }
+      ]
+    },
+    "tips-tricks": {
+      "type": "tips",
+      "backTarget": "teachers-guide",
+      "headerTitle": "Tips & Tricks",
+      "waysToPlay": [
+        "Explore individually on a tablet or computer",
+        "Project on a screen and explore as a class",
+        "Use in small groups for collaborative learning",
+        "Pair with hands-on activities for deeper engagement"
+      ],
+      "standards": [
+        {
+          "title": "Science & Engineering Practices",
+          "items": [
+            "Asking questions and defining problems",
+            "Obtaining, evaluating, and communicating information"
+          ]
+        },
+        {
+          "title": "Life Science",
+          "items": [
+            "Structure and function in living things",
+            "Organisms and their environments",
+            "Adaptation and survival"
+          ]
+        },
+        {
+          "title": "Crosscutting Concepts",
+          "items": [
+            "Structure and function",
+            "Cause and effect",
+            "Patterns"
+          ]
+        }
+      ]
+    },
+    "prompts-projects": {
+      "type": "prompts",
+      "backTarget": "teachers-guide",
+      "headerTitle": "Prompts & Projects",
+      "writingPrompts": [
+        "Imagine you are a tiny insect exploring a bog. Describe your encounter with a carnivorous plant.",
+        "If you could design a new carnivorous plant, what would it look like? How would it catch its prey?",
+        "Write a persuasive essay arguing why carnivorous plants are the most interesting plants in the world.",
+        "Compare and contrast two of the carnivorous plants you learned about today. How are they similar and different?"
+      ],
+      "projects": [
+        {
+          "title": "Build a Model",
+          "body": "Create a 3D model of your favorite carnivorous plant using clay, paper, or recycled materials."
+        },
+        {
+          "title": "Research Poster",
+          "body": "Choose a carnivorous plant not covered in the activity and create an informational poster."
+        },
+        {
+          "title": "Grow Your Own",
+          "body": "Follow a guide to grow a Venus flytrap or sundew in the classroom. Keep a journal of observations."
+        },
+        {
+          "title": "Comic Strip",
+          "body": "Draw a comic strip showing how a carnivorous plant catches its prey, from the insect's point of view."
+        }
+      ]
+    },
+    "scene": {
+      "type": "scene",
+      "backTarget": "home",
+      "headerTitle": "The Bog",
+      "heading": "Welcome to the Bog!",
+      "introText": "Click on a plant to learn more about it. Can you discover all four carnivorous plants?",
+      "completionText": "Amazing! You discovered all four carnivorous plants! Can you find the hidden frog?",
+      "progressLabel": "Plants discovered:"
+    },
+    "end": {
+      "type": "end",
+      "backTarget": "scene",
+      "headerTitle": "Great Job!",
+      "heading": "Ribbit! You Found Me!",
+      "body": [
+        "Great exploring! Carnivorous plants are some of the most amazing organisms on Earth. They've evolved incredible strategies to thrive in places where other plants can't.",
+        "Remember: these plants are often <strong>endangered</strong> in the wild. Never take carnivorous plants from their natural habitats, and help protect the bogs and wetlands where they live!"
+      ],
+      "buttons": [
+        { "label": "Explore Again", "target": "scene", "variant": "primary" },
+        { "label": "Home", "target": "home", "variant": "secondary" }
+      ]
+    }
+  },
+  "mascot": {
+    "revealOnCompletion": false,
+    "target": "end",
+    "label": "Click me!"
+  },
+  "subjects": [
+    {
+      "id": "bladderwort",
+      "name": "Bladderwort",
+      "subtitle": "Utricularia",
+      "backTarget": "scene",
+      "heroColorClass": "plant-hero--bladderwort",
+      "sceneImage": {
+        "src": "images/slide-10-bladderwort-floating-photo.jpg",
+        "alt": "Bladderwort plant"
+      },
+      "sections": [
+        {
+          "type": "text-with-image",
+          "heading": "What is a Bladderwort?",
+          "body": "Bladderworts are aquatic or semi-aquatic carnivorous plants found on every continent except Antarctica. They are known for their incredibly tiny, bladder-like traps that are among the most sophisticated structures in the plant kingdom.",
+          "image": {
+            "src": "images/slide-10-bladderwort-underwater-bladders.jpg",
+            "alt": "Bladderwort underwater bladder traps"
+          },
+          "hidden": false
+        },
+        {
+          "type": "text-with-image",
+          "heading": "How Do They Trap Prey?",
+          "body": "Bladderworts use small, hollow bladders attached to their underwater stems. These bladders have a tiny door (trapdoor) that opens inward. When a small organism like a water flea touches the trigger hairs on the door, the bladder rapidly sucks in water and the prey—in less than a millisecond! This makes it one of the fastest movements in the entire plant kingdom.",
+          "image": {
+            "src": "images/slide-11-bladderwort-bladder-closeup.png",
+            "alt": "Microscopic view of bladderwort bladder"
+          },
+          "hidden": false
+        },
+        {
+          "type": "facts-list",
+          "heading": "Fun Facts",
+          "items": [
+            "There are over <strong>230 species</strong> of bladderwort worldwide.",
+            "The trapping action takes about <strong>1/1000th of a second</strong>—faster than the blink of an eye!",
+            "Despite their carnivorous nature, bladderworts produce beautiful <strong>yellow, purple, or white flowers</strong> that rise above the water.",
+            "Some species are terrestrial and live in wet, sandy soil rather than in water."
+          ],
+          "hidden": true
+        },
+        {
+          "type": "text",
+          "heading": "Where Do They Live?",
+          "body": "Bladderworts thrive in <strong>nutrient-poor</strong> freshwater environments like bogs, ponds, and waterlogged soils. They catch tiny organisms to supplement the nutrients they can't get from their surroundings.",
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "id": "pitcher-plant",
+      "name": "Pitcher Plant",
+      "subtitle": "Sarracenia",
+      "backTarget": "scene",
+      "heroColorClass": "plant-hero--pitcher",
+      "sceneImage": {
+        "src": "images/slide-13-pitcher-plant-cross-section.png",
+        "alt": "Pitcher plant"
+      },
+      "sections": [
+        {
+          "type": "text-with-image",
+          "heading": "What is a Pitcher Plant?",
+          "body": "Pitcher plants are carnivorous plants with modified leaves shaped like deep, slippery tubes or \"pitchers.\" These stunning plants lure insects with nectar, bright colors, and sweet scents—only to trap them inside.",
+          "image": {
+            "src": "images/slide-13-pitcher-plant-cutaway.png",
+            "alt": "Pitcher plant cutaway showing interior"
+          },
+          "hidden": false
+        },
+        {
+          "type": "text-with-image",
+          "heading": "How Do They Trap Prey?",
+          "body": "Insects are attracted to the nectar around the rim of the pitcher. Once they land, the waxy, slippery surface causes them to slide down into the tube. Downward-pointing hairs inside prevent escape. The trapped insect eventually falls into a pool of digestive enzymes at the bottom, where it is broken down and absorbed by the plant.",
+          "image": {
+            "src": "images/slide-13-pitcher-plant-with-prey.png",
+            "alt": "Pitcher plant with trapped insects visible"
+          },
+          "hidden": false
+        },
+        {
+          "type": "facts-list",
+          "heading": "Fun Facts",
+          "items": [
+            "Some pitcher plants can grow up to <strong>3 feet tall</strong>!",
+            "The <strong>North American pitcher plant (Sarracenia)</strong> is native to bogs and wetlands in eastern North America.",
+            "Some tropical pitcher plants (<em>Nepenthes</em>) are large enough to catch <strong>small frogs and lizards</strong>.",
+            "Certain species of insects, spiders, and even frogs have evolved to <strong>live inside</strong> pitcher plants without being digested!"
+          ],
+          "hidden": true
+        },
+        {
+          "type": "text",
+          "heading": "Where Do They Live?",
+          "body": "North American pitcher plants grow in <strong>bogs, swamps, and wet savannas</strong> along the eastern coast of the United States and Canada. They thrive in acidic, nutrient-poor soils where other plants struggle to survive.",
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "id": "sundew",
+      "name": "Sundew",
+      "subtitle": "Drosera",
+      "backTarget": "scene",
+      "heroColorClass": "plant-hero--sundew",
+      "sceneImage": {
+        "src": "images/slide-16-sundew-sticky-tentacles.jpg",
+        "alt": "Sundew plant"
+      },
+      "sections": [
+        {
+          "type": "text-with-image",
+          "heading": "What is a Sundew?",
+          "body": "Sundews are carnivorous plants that use glistening, sticky tentacles on their leaves to capture insects. The \"dew\" drops on their leaves sparkle in the sunlight, attracting curious insects that get stuck in the adhesive.",
+          "image": {
+            "src": "images/slide-16-sundew-with-insect.jpg",
+            "alt": "Sundew with trapped insect in sticky tentacles"
+          },
+          "hidden": false
+        },
+        {
+          "type": "text-with-image",
+          "heading": "How Do They Trap Prey?",
+          "body": "Each leaf is covered in tiny, hair-like tentacles tipped with a sticky, glistening substance called mucilage. When an insect lands on the leaf and gets stuck, the surrounding tentacles slowly curl inward, wrapping around the prey. The leaf then secretes digestive enzymes to break down the insect over several days.",
+          "image": {
+            "src": "images/slide-16-sundew-rosette-top-view.png",
+            "alt": "Top view of sundew rosette showing sticky droplets"
+          },
+          "hidden": false
+        },
+        {
+          "type": "facts-list",
+          "heading": "Fun Facts",
+          "items": [
+            "There are over <strong>190 species</strong> of sundew found on every continent except Antarctica.",
+            "Charles Darwin was fascinated by sundews and called the round-leaved sundew <strong>\"the most wonderful plant in the world.\"</strong>",
+            "The sticky mucilage on sundew tentacles is so strong that some species can catch <strong>small butterflies and dragonflies</strong>.",
+            "Sundew leaves can curl around prey in as little as <strong>a few minutes</strong>."
+          ],
+          "hidden": true
+        },
+        {
+          "type": "text",
+          "heading": "Where Do They Live?",
+          "body": "Sundews are found in <strong>bogs, marshes, and wet sandy areas</strong> around the world. Like other carnivorous plants, they have evolved to catch insects because they grow in nutrient-poor soils.",
+          "hidden": true
+        }
+      ]
+    },
+    {
+      "id": "venus-flytrap",
+      "name": "Venus Flytrap",
+      "subtitle": "Dionaea muscipula",
+      "backTarget": "scene",
+      "heroColorClass": "plant-hero--venus",
+      "sceneImage": {
+        "src": "images/slide-19-venus-flytrap-open-trap.png",
+        "alt": "Venus flytrap"
+      },
+      "sections": [
+        {
+          "type": "text-with-image",
+          "heading": "What is a Venus Flytrap?",
+          "body": "The Venus flytrap is perhaps the most famous carnivorous plant in the world. It has jaw-like leaves that snap shut when triggered, trapping insects and spiders inside. It is native to a very small region of the United States.",
+          "image": {
+            "src": "images/slide-19-venus-flytrap-open-trap.png",
+            "alt": "Venus flytrap showing open trap with trigger hairs"
+          },
+          "hidden": false
+        },
+        {
+          "type": "text-with-image",
+          "heading": "How Do They Trap Prey?",
+          "body": "Each trap has tiny trigger hairs on its inner surface. When an insect touches these hairs <strong>twice within about 20 seconds</strong>, the trap snaps shut in less than half a second! The interlocking \"teeth\" along the edges form a cage, keeping the prey inside while the plant secretes digestive enzymes.",
+          "image": {
+            "src": "images/slide-20-venus-flytrap-video-thumbnail.jpg",
+            "alt": "Venus flytrap trap closing on insect"
+          },
+          "hidden": false
+        },
+        {
+          "type": "facts-list",
+          "heading": "Fun Facts",
+          "items": [
+            "Venus flytraps are only found naturally within a <strong>75-mile radius of Wilmington, North Carolina</strong>.",
+            "Each trap can only open and close about <strong>5–7 times</strong> before it dies and a new one grows.",
+            "The trapping mechanism uses a clever <strong>\"counting\" system</strong>—it needs two touches to trigger, so it doesn't waste energy closing on things like raindrops.",
+            "It takes a Venus flytrap about <strong>5–12 days</strong> to fully digest an insect."
+          ],
+          "hidden": true
+        },
+        {
+          "type": "text",
+          "heading": "Where Do They Live?",
+          "body": "Venus flytraps are native to the <strong>subtropical wetlands</strong> of North and South Carolina. They grow in sandy, acidic bogs that are frequently burned by natural fires, which help keep competing plants at bay.",
+          "hidden": true
+        }
+      ]
+    }
+  ]
+}
