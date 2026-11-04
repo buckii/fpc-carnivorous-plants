@@ -1,4 +1,8 @@
+import { useState } from 'react'
+import ImageViewer from './ImageViewer.jsx'
+
 export default function SectionCard({ section, revealed, delayIndex }) {
+  const [viewing, setViewing] = useState(false)
   const isHidden = section.hidden
 
   const style = isHidden && revealed
@@ -20,11 +24,11 @@ export default function SectionCard({ section, revealed, delayIndex }) {
       {section.type === 'text-with-image' && (
         <>
           <p dangerouslySetInnerHTML={{ __html: section.body }} />
-          <img
-            src={section.image.src}
-            alt={section.image.alt}
-            style={{ width: '100%', borderRadius: '8px', marginTop: '1rem' }}
-          />
+          <button className="fact-image-button" onClick={() => setViewing(true)} aria-label={`Enlarge image: ${section.image.alt}`}>
+            <img src={section.image.src} alt={section.image.alt} />
+            <span>Explore the image ⤢</span>
+          </button>
+          {viewing && <ImageViewer image={section.image} onClose={() => setViewing(false)} />}
         </>
       )}
       {section.type === 'facts-list' && (

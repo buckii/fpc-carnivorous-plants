@@ -13,18 +13,30 @@
       "secondary": "#A1D2DD",
       "muted": "#77833C",
       "brand": "#006682",
-      "textPrimary": "#3A2000",
-      "bgLight": "#FDF8F0"
+      "textPrimary": "#572700",
+      "bgLight": "#DBD095"
     }
   },
   "images": {
-    "logo": null,
-    "homeBackground": { "src": "images/slide-01-bog-forest-background.jpg", "alt": "Bog forest background" },
+    "logo": {
+      "src": "images/slide-01-fpc-logo.png",
+      "alt": "Franklin Park Conservatory & Botanical Gardens"
+    },
+    "homeBackground": {
+      "src": "images/slide-01-bog-forest-background.jpg",
+      "alt": "Bog forest background"
+    },
     "mascot": null,
     "sidekick": null
   },
   "navigation": {
-    "subjectScreenIds": ["bladderwort", "pitcher-plant", "sundew", "venus-flytrap"],
+    "subjectScreenIds": [
+      "bladderwort",
+      "pitcher-plant",
+      "sundew",
+      "venus-flytrap",
+      "butterwort"
+    ],
     "homeScreenId": "home",
     "sceneScreenId": "scene",
     "endScreenId": "end"
@@ -34,11 +46,26 @@
       "type": "home",
       "heading": "Carnivorous Plants",
       "tagline": "Discover the fascinating world of plants that eat bugs!",
-      "backgroundImage": { "src": "images/slide-01-bog-forest-background.jpg", "alt": "Bog forest" },
+      "backgroundImage": {
+        "src": "images/slide-01-bog-forest-background.jpg",
+        "alt": "Bog forest"
+      },
       "buttons": [
-        { "label": "Start Exploring", "target": "scene", "variant": "primary" },
-        { "label": "Tutorial", "target": "tutorial", "variant": "secondary" },
-        { "label": "Teacher's Guide", "target": "teachers-guide", "variant": "secondary" }
+        {
+          "label": "Start Exploring",
+          "target": "scene",
+          "variant": "primary"
+        },
+        {
+          "label": "Tutorial",
+          "target": "tutorial",
+          "variant": "secondary"
+        },
+        {
+          "label": "Teacher's Guide",
+          "target": "teachers-guide",
+          "variant": "secondary"
+        }
       ]
     },
     "tutorial": {
@@ -49,26 +76,40 @@
       "steps": [
         {
           "number": 1,
-          "title": "Enter the Bog",
-          "body": "Click \"Start Exploring\" to visit an interactive bog scene filled with carnivorous plants."
+          "title": "Meet the plants",
+          "body": "Start with the five plant boxes. Read the articles and click each lesson photo to reveal short facts and close-up views."
         },
         {
           "number": 2,
-          "title": "Click on Plants",
-          "body": "Each plant in the bog is clickable. Select one to learn more about it."
+          "title": "Explore every lesson",
+          "body": "Use Back to the Bog to return to the field guide. A check mark appears after you reveal every photo fact in a lesson."
         },
         {
           "number": 3,
-          "title": "Discover Fun Facts",
-          "body": "Read through each plant's information. Click \"Learn More\" to reveal additional facts and details."
+          "title": "Enter the bog challenge",
+          "body": "When all five lessons are complete, an arrow appears. Follow it to a bog with plants you can click or tap."
         },
         {
           "number": 4,
-          "title": "Return to the Bog",
-          "body": "Use the back arrow to return to the bog and explore another plant. Visit all four to complete your journey!"
+          "title": "Find the plant",
+          "body": "Read each prompt and select the matching plant in the bog. Incorrect answers offer a hint; try again until you find it."
+        },
+        {
+          "number": 5,
+          "title": "Identify a Butterwort",
+          "body": "Answer Yes or No for four original slide photos. Retry a missed question, then select Next after a correct answer."
+        },
+        {
+          "number": 6,
+          "title": "Finish your journey",
+          "body": "Find the frog after the challenges, enjoy a joke, and choose Play Again to start fresh. Use a mouse, touch, or Tab and Enter; arrow keys are not needed."
         }
       ],
-      "cta": { "label": "Start Exploring", "target": "scene", "variant": "primary" }
+      "cta": {
+        "label": "Start Exploring",
+        "target": "scene",
+        "variant": "primary"
+      }
     },
     "teachers-guide": {
       "type": "guide-hub",
@@ -104,28 +145,144 @@
       "sections": [
         {
           "heading": "Books",
-          "columns": ["Title", "Author", "Age Range"],
+          "columns": [
+            "Book title",
+            "Author",
+            "Grades"
+          ],
           "columnCount": 3,
           "rows": [
-            { "cells": ["Carnivorous Plants", "Dan Torre", "Adult"], "italic": [true, false, false] },
-            { "cells": ["The Savage Garden", "Peter D'Amato", "Adult"], "italic": [true, false, false] },
-            { "cells": ["Plantopedia", "Lauren Camilleri & Sophia Kaplan", "Adult"], "italic": [true, false, false] },
-            { "cells": ["How Plants Work", "Linda Chalker-Scott", "Adult"], "italic": [true, false, false] },
-            { "cells": ["What is a Plant?", "Bobbie Kalman", "Ages 5–7"], "italic": [true, false, false] },
-            { "cells": ["Plants that Eat Bugs", "Monica Russo", "Ages 4–8"], "italic": [true, false, false] },
-            { "cells": ["Venus Flytraps, Bladderworts and Other Wild and Amazing Plants", "Monica Russo", "Ages 4–8"], "italic": [true, false, false] }
+            {
+              "cells": [
+                "Meat-Eating Plants: Toothless Wonders",
+                "Ellen Lawrence",
+                "K–1"
+              ],
+              "italic": [
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "cells": [
+                "Scary Plants!",
+                "Janet Lawler",
+                "1–3"
+              ],
+              "italic": [
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "cells": [
+                "Venus Flytraps, Bladderworts: and Other Wild and Amazing Plants",
+                "Monica Halpern",
+                "1–4"
+              ],
+              "italic": [
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "cells": [
+                "Pretty Tricky: The Sneaky Ways Plants Survive",
+                "Etta Kaner; illustrated by Ashley Barron",
+                "2–3"
+              ],
+              "italic": [
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "cells": [
+                "Plants that Eat",
+                "Keisha Jones",
+                "3–4"
+              ],
+              "italic": [
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "cells": [
+                "Venus Flytrap – a Science Guide for Kids and Teachers",
+                "Kathleen J. Honda & Makoto Honda",
+                "4–6"
+              ],
+              "italic": [
+                true,
+                false,
+                false
+              ]
+            }
           ]
         },
         {
           "heading": "Videos & Documentaries",
-          "columns": ["Title", "Description"],
-          "columnCount": 2,
+          "columns": [
+            "Title",
+            "Platform",
+            "Duration"
+          ],
+          "columnCount": 3,
           "rows": [
-            { "cells": ["Attenborough: Eaters that Eat Animals – BBC", "Documentary about carnivorous plants"], "italic": [true, false] },
-            { "cells": ["Venus Flytraps: Jaws of Death – National Geographic", "Short documentary on Venus flytraps"], "italic": [true, false] },
-            { "cells": ["Plant-Eating Sundew – National Geographic", "Short documentary on sundews"], "italic": [true, false] },
-            { "cells": ["Carnivorous Plants – SciShow Kids", "Kid-friendly video about carnivorous plants"], "italic": [true, false] },
-            { "cells": ["The Plants that Eat Animals – It's OK to be Smart", "Educational video on plant carnivory"], "italic": [true, false] }
+            {
+              "cells": [
+                "Plants Behaving Badly",
+                "Amazon Prime Video",
+                "53 minutes (Season 1, episode 1)"
+              ],
+              "italic": [
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "cells": [
+                "Gross Plants",
+                "PBS Learning Media",
+                "5 minutes 45 seconds"
+              ],
+              "italic": [
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "cells": [
+                "What’s Wild: Carnivorous Plants",
+                "Maine Public Library website",
+                "5 minutes (Season 1, episode 5)"
+              ],
+              "italic": [
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "cells": [
+                "4 Deadly Carnivorous Plants",
+                "PBS.org",
+                "5 minutes 40 seconds"
+              ],
+              "italic": [
+                true,
+                false,
+                false
+              ]
+            }
           ]
         }
       ]
@@ -142,26 +299,69 @@
       ],
       "standards": [
         {
-          "title": "Science & Engineering Practices",
+          "title": "K.LS.1",
           "items": [
-            "Asking questions and defining problems",
-            "Obtaining, evaluating, and communicating information"
+            "Living things have specific characteristics and traits."
           ]
         },
         {
-          "title": "Life Science",
+          "title": "K.LS.2",
           "items": [
-            "Structure and function in living things",
-            "Organisms and their environments",
-            "Adaptation and survival"
+            "Living things have physical traits and behaviors, which influence their survival."
           ]
         },
         {
-          "title": "Crosscutting Concepts",
+          "title": "1.LS.1",
           "items": [
-            "Structure and function",
-            "Cause and effect",
-            "Patterns"
+            "Living things have basic needs, which are met by obtaining materials from the physical environment."
+          ]
+        },
+        {
+          "title": "1.LS.2",
+          "items": [
+            "Living things survive only in environments that meet their needs."
+          ]
+        },
+        {
+          "title": "2.LS.1",
+          "items": [
+            "Living things cause changes on Earth."
+          ]
+        },
+        {
+          "title": "3.LS.3",
+          "items": [
+            "Plants and animals have life cycles that are part of their adaptations for survival in their natural environments."
+          ]
+        },
+        {
+          "title": "4.LS.1",
+          "items": [
+            "Changes in an organism’s environment are sometimes beneficial to its survival and sometimes harmful."
+          ]
+        },
+        {
+          "title": "5.LS.1",
+          "items": [
+            "Organisms perform a variety of roles in an ecosystem."
+          ]
+        },
+        {
+          "title": "6.LS.4",
+          "items": [
+            "Living systems at all levels of organization demonstrate the complementary nature of structure and function."
+          ]
+        },
+        {
+          "title": "7.LS.1",
+          "items": [
+            "Energy flows and matter is transferred continuously from one organism to another and between organisms and their physical environments."
+          ]
+        },
+        {
+          "title": "8.LS.3",
+          "items": [
+            "The characteristics of an organism are a result of inherited traits received from parent(s)."
           ]
         }
       ]
@@ -192,6 +392,18 @@
         {
           "title": "Comic Strip",
           "body": "Draw a comic strip showing how a carnivorous plant catches its prey, from the insect's point of view."
+        },
+        {
+          "title": "Bog Diorama",
+          "body": "Build a carnivorous plant bog diorama. Include the water, plants, and prey in the habitat."
+        },
+        {
+          "title": "Paper Plate Venus Flytrap",
+          "body": "Fold a paper plate into a trap and add paper trigger hairs. Explain how they help catch prey."
+        },
+        {
+          "title": "Paper Cup Pitcher Plant",
+          "body": "Make a pitcher trap from a paper cup and label the structures that help it capture insects."
         }
       ]
     },
@@ -199,23 +411,27 @@
       "type": "scene",
       "backTarget": "home",
       "headerTitle": "The Bog",
-      "heading": "Welcome to the Bog!",
-      "introText": "Click on a plant to learn more about it. Can you discover all four carnivorous plants?",
-      "completionText": "Amazing! You discovered all four carnivorous plants! Can you find the hidden frog?",
+      "heading": "Your bog field guide",
+      "introText": "Meet Mr. Fly! Open every plant box and click through its photos to discover how it catches prey. Complete all five to unlock the bog challenge.",
+      "completionText": "All five plants explored! Follow the arrow to put your knowledge to the test.",
       "progressLabel": "Plants discovered:"
     },
     "end": {
       "type": "end",
       "backTarget": "scene",
       "headerTitle": "Great Job!",
-      "heading": "Ribbit! You Found Me!",
+      "heading": "Congratulations!",
       "body": [
-        "Great exploring! Carnivorous plants are some of the most amazing organisms on Earth. They've evolved incredible strategies to thrive in places where other plants can't.",
-        "Remember: these plants are often <strong>endangered</strong> in the wild. Never take carnivorous plants from their natural habitats, and help protect the bogs and wetlands where they live!"
+        "We survived our trip through a carnivorous plant bog. Thanks for playing!",
+        "What did the Venus Flytrap say to the waiter?",
+        "<strong>“I’ll have a cheeseburger with flies!”</strong>"
       ],
       "buttons": [
-        { "label": "Explore Again", "target": "scene", "variant": "primary" },
-        { "label": "Home", "target": "home", "variant": "secondary" }
+        {
+          "label": "Play Again",
+          "target": "restart",
+          "variant": "primary"
+        }
       ]
     }
   },
@@ -273,7 +489,31 @@
           "body": "Bladderworts thrive in <strong>nutrient-poor</strong> freshwater environments like bogs, ponds, and waterlogged soils. They catch tiny organisms to supplement the nutrients they can't get from their surroundings.",
           "hidden": true
         }
-      ]
+      ],
+      "lesson": [
+        {
+          "image": {
+            "src": "images/slide-10-bladderwort-floating-photo.jpg",
+            "alt": "This is a Bladderwort! Some aquatic bladderworts float near the water’s surface."
+          },
+          "fact": "This is a Bladderwort! Some aquatic bladderworts float near the water’s surface."
+        },
+        {
+          "image": {
+            "src": "images/slide-10-bladderwort-underwater-bladders.jpg",
+            "alt": "Look closer at the underwater stems: they carry tiny suction traps called bladders."
+          },
+          "fact": "Look closer at the underwater stems: they carry tiny suction traps called bladders."
+        },
+        {
+          "image": {
+            "src": "images/slide-11-bladderwort-bladder-closeup.png",
+            "alt": "When prey touches the trigger hairs, the bladder opens and sucks it in! Close-up credit: Michal Rubeš."
+          },
+          "fact": "When prey touches the trigger hairs, the bladder opens and sucks it in! Close-up credit: Michal Rubeš."
+        }
+      ],
+      "bogImage": "images/original/1-image9.png"
     },
     {
       "id": "pitcher-plant",
@@ -323,7 +563,31 @@
           "body": "North American pitcher plants grow in <strong>bogs, swamps, and wet savannas</strong> along the eastern coast of the United States and Canada. They thrive in acidic, nutrient-poor soils where other plants struggle to survive.",
           "hidden": true
         }
-      ]
+      ],
+      "lesson": [
+        {
+          "image": {
+            "src": "images/slide-13-pitcher-plant-three-hanging.png",
+            "alt": "This is a Pitcher Plant! What do you think we will see inside?"
+          },
+          "fact": "This is a Pitcher Plant! What do you think we will see inside?"
+        },
+        {
+          "image": {
+            "src": "images/slide-13-pitcher-plant-cutaway.png",
+            "alt": "The pitcher-shaped leaves form deep traps. Click the photo to look inside."
+          },
+          "fact": "The pitcher-shaped leaves form deep traps. Click the photo to look inside."
+        },
+        {
+          "image": {
+            "src": "images/slide-13-pitcher-plant-with-prey.png",
+            "alt": "Prey falls into liquid inside the pitcher. Enzymes gradually digest the trapped creatures."
+          },
+          "fact": "Prey falls into liquid inside the pitcher. Enzymes gradually digest the trapped creatures."
+        }
+      ],
+      "bogImage": "images/original/1-image3.png"
     },
     {
       "id": "sundew",
@@ -373,7 +637,36 @@
           "body": "Sundews are found in <strong>bogs, marshes, and wet sandy areas</strong> around the world. Like other carnivorous plants, they have evolved to catch insects because they grow in nutrient-poor soils.",
           "hidden": true
         }
-      ]
+      ],
+      "lesson": [
+        {
+          "image": {
+            "src": "images/slide-16-sundew-rosette-top-view.png",
+            "alt": "This is a Sundew! Some species have round leaves, while others have long, narrow leaves."
+          },
+          "fact": "This is a Sundew! Some species have round leaves, while others have long, narrow leaves."
+        },
+        {
+          "image": {
+            "src": "images/slide-16-sundew-tentacle-detail.png",
+            "alt": "The leaves have tentacles tipped with sticky mucilage that prevents insects from escaping."
+          },
+          "fact": "The leaves have tentacles tipped with sticky mucilage that prevents insects from escaping."
+        },
+        {
+          "image": {
+            "src": "images/slide-16-sundew-with-insect.jpg",
+            "alt": "Sundews use these sticky leaves to capture and digest prey."
+          },
+          "fact": "Sundews use these sticky leaves to capture and digest prey."
+        }
+      ],
+      "bogImage": "images/original/1-image11.png",
+      "video": {
+        "url": "https://www.youtube.com/watch?v=ArBZzrV3xww",
+        "image": "images/original/3-image1.jpg",
+        "title": "Check out sundews in action!"
+      }
     },
     {
       "id": "venus-flytrap",
@@ -423,7 +716,139 @@
           "body": "Venus flytraps are native to the <strong>subtropical wetlands</strong> of North and South Carolina. They grow in sandy, acidic bogs that are frequently burned by natural fires, which help keep competing plants at bay.",
           "hidden": true
         }
-      ]
+      ],
+      "lesson": [
+        {
+          "image": {
+            "src": "images/slide-19-venus-flytrap-cluster.jpg",
+            "alt": "This is a Venus Flytrap! Its leaves form traps that snap shut."
+          },
+          "fact": "This is a Venus Flytrap! Its leaves form traps that snap shut."
+        },
+        {
+          "image": {
+            "src": "images/slide-19-venus-flytrap-open-trap.png",
+            "alt": "Look inside the trap for trigger hairs. Repeated touches cause it to close."
+          },
+          "fact": "Look inside the trap for trigger hairs. Repeated touches cause it to close."
+        },
+        {
+          "image": {
+            "src": "images/original/3-image8.png",
+            "alt": "Each trap can close only a few times. Responding to repeated touches helps conserve energy."
+          },
+          "fact": "Each trap can close only a few times. Responding to repeated touches helps conserve energy."
+        }
+      ],
+      "bogImage": "images/original/1-image6.png",
+      "video": {
+        "url": "https://www.youtube.com/watch?v=O7eQKSf0LmY",
+        "image": "images/original/3-image3.jpg",
+        "title": "Let’s watch a Venus Flytrap catch its prey!"
+      }
+    },
+    {
+      "id": "butterwort",
+      "name": "Butterwort",
+      "subtitle": "Pinguicula",
+      "backTarget": "scene",
+      "heroColorClass": "plant-hero--butterwort",
+      "sceneImage": {
+        "src": "images/slide-22-butterwort-icon.png",
+        "alt": "Butterwort with a rosette of leaves"
+      },
+      "sections": [
+        {
+          "type": "text-with-image",
+          "heading": "What is a Butterwort?",
+          "body": "Butterworts are carnivorous plants with green, sticky leaves. Their leaves form a rosette, and many species produce colorful flowers.",
+          "image": {
+            "src": "images/original/3-image11.jpg",
+            "alt": "Butterwort leaves and flowers from the original slides"
+          },
+          "hidden": false
+        },
+        {
+          "type": "facts-list",
+          "heading": "How Do They Trap Prey?",
+          "items": [
+            "Mucilage attracts small insects and makes the leaves sticky.",
+            "Insects become stuck on the leaves and cannot escape.",
+            "Digestive enzymes break down prey so the plant can absorb nutrients."
+          ],
+          "hidden": true
+        }
+      ],
+      "lesson": [
+        {
+          "image": {
+            "src": "images/original/3-image11.jpg",
+            "alt": "This is a Butterwort! Notice the green leaves arranged in a rosette."
+          },
+          "fact": "This is a Butterwort! Notice the green leaves arranged in a rosette."
+        },
+        {
+          "image": {
+            "src": "images/original/3-image14.png",
+            "alt": "Its sticky leaves prevent small insects from escaping."
+          },
+          "fact": "Its sticky leaves prevent small insects from escaping."
+        },
+        {
+          "image": {
+            "src": "images/slide-22-butterwort-purple-flower.jpg",
+            "alt": "Butterwort flower from the original slides"
+          },
+          "fact": "Mucilage attracts insects and makes the leaves sticky."
+        }
+      ],
+      "bogImage": "images/original/1-image5.png"
     }
-  ]
+  ],
+  "challenge": {
+    "prompts": [
+      {
+        "plant": "bladderwort",
+        "text": "Find the plant with tiny underwater suction traps."
+      },
+      {
+        "plant": "pitcher-plant",
+        "text": "Find the plant with deep pitcher-shaped traps."
+      },
+      {
+        "plant": "sundew",
+        "text": "Find the plant with sticky tentacles on its leaves."
+      },
+      {
+        "plant": "venus-flytrap",
+        "text": "Find the plant whose traps snap shut when trigger hairs are touched."
+      },
+      {
+        "plant": "butterwort",
+        "text": "Find the plant with flat, sticky leaves arranged in a rosette."
+      }
+    ],
+    "rounds": [
+      {
+        "name": "Butterwort",
+        "image": "images/original/2-image3.png",
+        "answer": true
+      },
+      {
+        "name": "Sundew",
+        "image": "images/original/2-image2.jpg",
+        "answer": false
+      },
+      {
+        "name": "Ghost Plant",
+        "image": "images/original/4-image3.png",
+        "answer": false
+      },
+      {
+        "name": "Butterwort",
+        "image": "images/original/4-image4.jpg",
+        "answer": true
+      }
+    ]
+  }
 }
