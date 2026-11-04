@@ -11,6 +11,7 @@ import PromptsScreen from './components/screens/PromptsScreen.jsx'
 import SceneScreen from './components/screens/SceneScreen.jsx'
 import SubjectDetailScreen from './components/screens/SubjectDetailScreen.jsx'
 import EndScreen from './components/screens/EndScreen.jsx'
+import ChallengeScreen from './components/screens/ChallengeScreen.jsx'
 
 const { meta, navigation, screens, subjects, mascot } = gameData
 const { subjectScreenIds, homeScreenId, sceneScreenId, endScreenId } = navigation
@@ -29,27 +30,40 @@ const screenComponentMap = {
 export default function App() {
   const [currentScreen, setCurrentScreen] = useState(homeScreenId)
   const [visitedSubjects, setVisitedSubjects] = useState(new Set())
-  const [allDiscovered, setAllDiscovered] = useState(false)
+  const allDiscovered = visitedSubjects.size === subjectScreenIds.length
 
   useEffect(() => {
     document.title = meta.title
   }, [])
 
   function navigate(screenId) {
+    if (screenId === 'restart') {
+      setVisitedSubjects(new Set())
+      setCurrentScreen(homeScreenId)
+      window.scrollTo(0, 0)
+      return
+    }
+    if ((screenId === 'challenge' || screenId === endScreenId) && !allDiscovered) return
     setCurrentScreen(screenId)
     window.scrollTo(0, 0)
 
-    if (subjectScreenIds.includes(screenId)) {
-      setVisitedSubjects((prev) => {
-        const next = new Set(prev)
-        next.add(screenId)
-        if (next.size === subjectScreenIds.length) {
-          setAllDiscovered(true)
-        }
-        return next
-      })
-    }
   }
+
+  function completeLesson(screenId) {
+    setVisitedSubjects(prev => {
+      const next = new Set(prev)
+      next.add(screenId)
+      return next
+    })
+  }
+
+  useEffect(() => {
+    const heading = document.querySelector('h1, h2')
+    if (heading) {
+      heading.setAttribute('tabindex', '-1')
+      heading.focus({ preventScroll: true })
+    }
+  }, [currentScreen])
 
   const activeSubject = subjects.find((s) => s.id === currentScreen)
 
@@ -57,7 +71,9 @@ export default function App() {
     return (
       <>
         <SubjectDetailScreen
+          key={activeSubject.id}
           subject={activeSubject}
+          onComplete={completeLesson}
           meta={meta}
           onNavigate={navigate}
         />
@@ -65,6 +81,8 @@ export default function App() {
       </>
     )
   }
+
+  if (currentScreen === 'challenge') return <><ChallengeScreen challenge={gameData.challenge} subjects={subjects} onNavigate={navigate} /><SiteFooter text={meta.footerText} /></>
 
   const ScreenComponent = screenComponentMap[currentScreen]
 
