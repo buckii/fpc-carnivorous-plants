@@ -1414,3 +1414,15 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
   .guided-lesson .lesson-caption h2 { font-size: 1rem; }
   .lesson-instruction { display: none; }
 }
+
+/* Completed information cards fade behind a visible layer of fog. */
+.article-box.complete { position: relative; }
+.article-box.complete > img { filter: grayscale(.6) blur(2px); opacity: .5; }
+.article-box.complete::after { content: ''; position: absolute; inset: 0; background: rgba(240,233,217,.35); pointer-events: none; border-radius: inherit; }
+.article-box.complete:focus-visible { outline: 4px solid #572700; outline-offset: 4px; }
+.bog-entry-arrow { display: inline-flex; flex-direction: column; align-items: center; gap: .3rem; border: 0; background: transparent; color: #572700; cursor: pointer; padding: .5rem 1.5rem; font: bold 1.2rem var(--font-secondary); }
+.bog-entry-arrow svg { width: clamp(160px, 24vw, 240px); height: auto; fill: currentColor; transition: transform .2s; }
+.bog-entry-arrow:hover svg { transform: translateX(8px); }
+.challenge-screen { background: url('/images/original/1-image4.jpg') center / cover no-repeat; }
+.challenge-prompt .bog-page-title { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: .5rem; }
+.challenge-prompt h2 { font-size: clamp(1.1rem, 2.5vw, 1.6rem); margin: 0 auto .75rem; max-width: 850px; }

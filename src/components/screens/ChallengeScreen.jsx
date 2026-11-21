@@ -16,11 +16,12 @@ export default function ChallengeScreen({ challenge, subjects, onNavigate }) {
     } else setIndex(index + 1)
   }
   return <div className="screen active challenge-screen">
-    <SiteHeader title="The Bog Challenge" backTarget="scene" onNavigate={onNavigate} />
+    <SiteHeader title="THE BOG" backTarget="scene" onNavigate={onNavigate} />
     {stage === 'find' && <>
       <div className="challenge-prompt" aria-live="polite">
+        <h1 className="bog-page-title">THE BOG</h1>
         <p className="eyebrow">Find the plant · {index + 1} / {challenge.prompts.length}</p>
-        <h1>{prompt.text}</h1>
+        <h2>{prompt.text}</h2>
         {feedback === 'wrong' && <p role="status">Not quite. Think about how this plant catches its prey, then try another plant.</p>}
         {feedback === 'correct' && <><p role="status">Correct! This is a {subjects.find(s => s.id === prompt.plant).name}.</p><button className="btn btn-primary" onClick={advance}>Next →</button></>}
       </div>

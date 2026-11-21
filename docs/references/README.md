@@ -62,3 +62,5 @@ The photo lesson sequence is assembled by `src/components/subject/lessonSteps.js
 The latest information-page background replaces PMS 615 with the exact cream sampled from [the supplied screenshot](information-background-color.png): `#F0E9D9` (RGB 240, 233, 217). This replaces the previous PMS 615 areas, including non-home-page headers and footers. The home page keeps its existing styling.
 
 The home-page header and footer now also use the screenshot cream `#F0E9D9`, with dark brown `#572700` text. This supersedes the earlier home-page exception for these bars; the other home-page elements retain their existing styling.
+
+The field-guide page is now titled “Information Center.” Completed plant cards are fogged over after the learner finishes the photo sequence and returns. Once all five cards are fogged, a large dark brown arrow opens the existing plant-finding game, now titled “THE BOG,” with the same grassy bog photograph used on the home page.

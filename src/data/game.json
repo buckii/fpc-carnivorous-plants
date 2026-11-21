@@ -82,12 +82,12 @@
         {
           "number": 2,
           "title": "Explore every lesson",
-          "body": "Click through every discovery for a plant, including its field notes and video information. Back to the Bog unlocks only at the final discovery. Complete all five plants to unlock the bog challenge."
+          "body": "Click through every discovery for a plant, including its field notes and video information. Back to the Bog unlocks only at the final discovery. Complete all five plants to unlock the bog challenge. Completed plant cards become fogged over in the Information Center."
         },
         {
           "number": 3,
           "title": "Enter the bog challenge",
-          "body": "When all five lessons are complete, an arrow appears. Follow it to a bog with plants you can click or tap."
+          "body": "When all five plant cards are fogged over, a large brown arrow appears. Click it to enter THE BOG and find plants matching each prompt."
         },
         {
           "number": 4,
@@ -410,10 +410,10 @@
     "scene": {
       "type": "scene",
       "backTarget": "home",
-      "headerTitle": "The Bog",
-      "heading": "Your bog field guide",
+      "headerTitle": "Information Center",
+      "heading": "Information Center",
       "introText": "Meet Mr. Fly! Choose a plant, then click its picture to explore every photo and fact. Back to the Bog unlocks after the final discovery. Finish all five plants to unlock the challenge.",
-      "completionText": "All five plants explored! Follow the arrow to put your knowledge to the test.",
+      "completionText": "All five plants explored! Follow the brown arrow to THE BOG.",
       "progressLabel": "Plants discovered:"
     },
     "end": {
