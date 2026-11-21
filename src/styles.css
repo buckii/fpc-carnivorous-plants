@@ -1161,7 +1161,7 @@ button:focus-visible, a:focus-visible { outline: 4px solid #f8971d; outline-offs
 .habitat-plant--3 { left: 61%; bottom: 25%; }
 .habitat-plant--4 { left: 79%; bottom: 2%; }
 .habitat-plant:disabled { cursor: default; }
-.identification { min-height: calc(100vh - 110px); background-size: cover; background-position: center; display: flex; align-items: flex-end; justify-content: center; padding: 3rem 1.5rem; }
+.identification { min-height: calc(100vh - 110px); background-color: #F0E9D9; background-size: contain; background-position: center; background-repeat: no-repeat; display: flex; align-items: flex-end; justify-content: center; padding: 3rem 1.5rem; }
 .identification-card { background: #fffffff5; text-align: center; border-radius: 24px; padding: 2rem; max-width: 600px; width: 100%; box-shadow: 0 8px 40px #173b4344; }
 .identification-card h1 { font-size: 2rem; margin-bottom: 1rem; }
 .identification-card .answer-buttons { justify-content: space-between; }

@@ -78,3 +78,5 @@ Plant discoveries now follow the [half-page picture reference](discovery-half-pa
 Discovery photographs now use the full picture area without a border, colored frame, or bottom instruction strip. Removing the strip and its reserved space enlarges the visible image while preserving uncropped photos, aligned plant-part arrows, and picture clicks to advance discoveries. The Enlarge image button remains available for a close-up.
 
 The Teacher’s Guide presents Additional Resources, Tips & Tricks, and Prompts & Projects as three separate buttons with white backgrounds, distinct from the cream page and information panel. Each button retains its own destination and hover styling.
+
+All four “Is this a Butterwort?” identification photos fit entirely within the full-page activity area without cropping or repeating. Any space around a photo uses the screenshot cream background. The question and answer controls remain overlaid. The [identification fit example](butterwort-identification-fit-reference.png) is saved for reference.
