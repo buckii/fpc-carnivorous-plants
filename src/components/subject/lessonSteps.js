@@ -19,5 +19,14 @@ export function createLessonSteps(subject) {
     src: subject.video.image,
     alt: `${subject.name} video preview from the original slides`,
   }, subject.video)
-  return steps
+  const annotatedSteps = []
+  steps.forEach((step, index) => {
+    const annotation = subject.partAnnotations?.[index + 1]
+    const discovery = annotation ? { ...step, image: annotation.image || step.image, annotation } : { ...step }
+    if (!annotation && annotatedSteps.at(-1)?.image.src === discovery.image.src) {
+      discovery.image = images.find(image => image.src !== discovery.image.src)
+    }
+    annotatedSteps.push(discovery)
+  })
+  return annotatedSteps
 }

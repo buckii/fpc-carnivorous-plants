@@ -64,7 +64,7 @@
         {
           "label": "Teacher's Guide",
           "target": "teachers-guide",
-          "variant": "secondary"
+          "variant": "guide"
         }
       ]
     },
@@ -513,7 +513,79 @@
           "fact": "When prey touches the trigger hairs, the bladder opens and sucks it in! Close-up credit: Michal Rubeš."
         }
       ],
-      "bogImage": "images/original/1-image9.png"
+      "bogImage": "images/original/1-image9.png",
+      "partAnnotations": {
+        "2": {
+          "label": "a suction bladder",
+          "from": [
+            68,
+            32
+          ],
+          "to": [
+            47,
+            51
+          ]
+        },
+        "3": {
+          "label": "trigger hairs at the bladder opening",
+          "from": [
+            75,
+            12
+          ],
+          "to": [
+            51,
+            31
+          ]
+        },
+        "4": {
+          "label": "a bladder trap",
+          "from": [
+            69,
+            34
+          ],
+          "to": [
+            47,
+            51
+          ]
+        },
+        "5": {
+          "label": "the bladder opening and trigger hairs",
+          "from": [
+            78,
+            18
+          ],
+          "to": [
+            51,
+            31
+          ]
+        },
+        "7": {
+          "label": "a suction bladder",
+          "from": [
+            69,
+            34
+          ],
+          "to": [
+            47,
+            51
+          ]
+        },
+        "8": {
+          "label": "the yellow flowers",
+          "from": [
+            77,
+            12
+          ],
+          "to": [
+            50,
+            22
+          ],
+          "image": {
+            "src": "images/slide-10-bladderwort-floating-photo.jpg",
+            "alt": "Yellow bladderwort flowers above the water"
+          }
+        }
+      }
     },
     {
       "id": "pitcher-plant",
@@ -587,7 +659,75 @@
           "fact": "Prey falls into liquid inside the pitcher. Enzymes gradually digest the trapped creatures."
         }
       ],
-      "bogImage": "images/original/1-image3.png"
+      "bogImage": "images/original/1-image3.png",
+      "partAnnotations": {
+        "1": {
+          "label": "a pitcher-shaped trap",
+          "from": [
+            58,
+            51
+          ],
+          "to": [
+            78,
+            67
+          ]
+        },
+        "2": {
+          "label": "the inside of the pitcher-shaped leaf",
+          "from": [
+            14,
+            42
+          ],
+          "to": [
+            51,
+            61
+          ]
+        },
+        "3": {
+          "label": "liquid and trapped prey inside the pitcher",
+          "from": [
+            82,
+            28
+          ],
+          "to": [
+            61,
+            61
+          ]
+        },
+        "4": {
+          "label": "the pitcher-shaped leaf",
+          "from": [
+            14,
+            42
+          ],
+          "to": [
+            51,
+            61
+          ]
+        },
+        "5": {
+          "label": "the slippery rim",
+          "from": [
+            15,
+            45
+          ],
+          "to": [
+            35,
+            29
+          ]
+        },
+        "9": {
+          "label": "a hollow pitcher trap",
+          "from": [
+            54,
+            41
+          ],
+          "to": [
+            76,
+            61
+          ]
+        }
+      }
     },
     {
       "id": "sundew",
@@ -648,8 +788,8 @@
         },
         {
           "image": {
-            "src": "images/slide-16-sundew-tentacle-detail.png",
-            "alt": "The leaves have tentacles tipped with sticky mucilage that prevents insects from escaping."
+            "src": "images/slide-16-sundew-sticky-tentacles.jpg",
+            "alt": "Sundew leaves covered with sticky tentacles and glistening droplets"
           },
           "fact": "The leaves have tentacles tipped with sticky mucilage that prevents insects from escaping."
         },
@@ -666,6 +806,85 @@
         "url": "https://www.youtube.com/watch?v=ArBZzrV3xww",
         "image": "images/original/3-image1.jpg",
         "title": "Check out sundews in action!"
+      },
+      "partAnnotations": {
+        "1": {
+          "label": "a sundew leaf",
+          "from": [
+            15,
+            20
+          ],
+          "to": [
+            36,
+            38
+          ]
+        },
+        "2": {
+          "label": "sticky tentacles and droplets",
+          "from": [
+            12,
+            32
+          ],
+          "to": [
+            25,
+            44
+          ]
+        },
+        "3": {
+          "label": "a sticky sundew leaf",
+          "from": [
+            94,
+            15
+          ],
+          "to": [
+            77,
+            47
+          ]
+        },
+        "4": {
+          "label": "tentacles around the leaf",
+          "from": [
+            8,
+            12
+          ],
+          "to": [
+            29,
+            30
+          ]
+        },
+        "5": {
+          "label": "sticky droplets on the tentacles",
+          "from": [
+            14,
+            25
+          ],
+          "to": [
+            26,
+            42
+          ]
+        },
+        "8": {
+          "label": "sticky tentacle tips",
+          "from": [
+            14,
+            25
+          ],
+          "to": [
+            26,
+            42
+          ]
+        },
+        "9": {
+          "label": "a curled sundew leaf",
+          "from": [
+            8,
+            8
+          ],
+          "to": [
+            42,
+            26
+          ]
+        }
       }
     },
     {
@@ -745,6 +964,93 @@
         "url": "https://www.youtube.com/watch?v=O7eQKSf0LmY",
         "image": "images/original/3-image3.jpg",
         "title": "Let’s watch a Venus Flytrap catch its prey!"
+      },
+      "partAnnotations": {
+        "1": {
+          "label": "an open flytrap leaf",
+          "from": [
+            33,
+            24
+          ],
+          "to": [
+            43,
+            52
+          ]
+        },
+        "2": {
+          "label": "a trigger hair inside the trap",
+          "from": [
+            15,
+            20
+          ],
+          "to": [
+            34,
+            47
+          ]
+        },
+        "3": {
+          "label": "a trigger hair",
+          "from": [
+            10,
+            32
+          ],
+          "to": [
+            53,
+            52
+          ]
+        },
+        "4": {
+          "label": "the jaw-like trap",
+          "from": [
+            8,
+            10
+          ],
+          "to": [
+            38,
+            34
+          ]
+        },
+        "5": {
+          "label": "a trigger hair",
+          "from": [
+            10,
+            32
+          ],
+          "to": [
+            53,
+            52
+          ],
+          "image": {
+            "src": "images/original/3-image8.png",
+            "alt": "Close-up of a trigger hair inside a Venus flytrap"
+          }
+        },
+        "7": {
+          "label": "a trigger hair inside the trap",
+          "from": [
+            10,
+            32
+          ],
+          "to": [
+            53,
+            52
+          ]
+        },
+        "8": {
+          "label": "a trigger hair",
+          "from": [
+            15,
+            20
+          ],
+          "to": [
+            34,
+            47
+          ],
+          "image": {
+            "src": "images/slide-19-venus-flytrap-open-trap.png",
+            "alt": "Trigger hairs on the inside of a Venus flytrap"
+          }
+        }
       }
     },
     {
@@ -802,7 +1108,94 @@
           "fact": "Mucilage attracts insects and makes the leaves sticky."
         }
       ],
-      "bogImage": "images/original/1-image5.png"
+      "bogImage": "images/original/1-image5.png",
+      "partAnnotations": {
+        "1": {
+          "label": "the rosette of leaves",
+          "from": [
+            12,
+            51
+          ],
+          "to": [
+            26,
+            73
+          ]
+        },
+        "2": {
+          "label": "the sticky leaf surface",
+          "from": [
+            75,
+            18
+          ],
+          "to": [
+            60,
+            54
+          ]
+        },
+        "3": {
+          "label": "the sticky leaves",
+          "from": [
+            75,
+            18
+          ],
+          "to": [
+            64,
+            70
+          ],
+          "image": {
+            "src": "images/butterwort-photo.png",
+            "alt": "Butterwort with a flower bud and overlapping sticky leaves"
+          }
+        },
+        "4": {
+          "label": "the green leaves",
+          "from": [
+            12,
+            51
+          ],
+          "to": [
+            26,
+            73
+          ]
+        },
+        "5": {
+          "label": "the sticky leaf surface",
+          "from": [
+            75,
+            18
+          ],
+          "to": [
+            60,
+            54
+          ]
+        },
+        "6": {
+          "label": "the sticky leaves",
+          "from": [
+            75,
+            18
+          ],
+          "to": [
+            64,
+            70
+          ],
+          "image": {
+            "src": "images/butterwort-photo.png",
+            "alt": "Butterwort leaves with a pink flower bud"
+          }
+        },
+        "7": {
+          "label": "the nutrient-absorbing leaves",
+          "from": [
+            12,
+            51
+          ],
+          "to": [
+            26,
+            73
+          ]
+        }
+      }
     }
   ],
   "challenge": {

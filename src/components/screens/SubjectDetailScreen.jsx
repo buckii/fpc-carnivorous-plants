@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import SiteHeader from '../layout/SiteHeader.jsx'
 import ImageViewer from '../subject/ImageViewer.jsx'
+import AnnotatedPlantImage from '../subject/AnnotatedPlantImage.jsx'
 import { createLessonSteps } from '../subject/lessonSteps.js'
 
 export default function SubjectDetailScreen({ subject, onNavigate, onComplete }) {
@@ -26,7 +27,7 @@ export default function SubjectDetailScreen({ subject, onNavigate, onComplete })
       <div className="lesson-title"><h1>{subject.name}</h1><p><em>{subject.subtitle}</em></p></div>
       <div className="photo-lesson">
         <button className="lesson-photo" onClick={isLastStep ? () => setZoomed(true) : nextFact} aria-label={isLastStep ? 'Enlarge the final plant photo' : 'Show the next plant photo and facts'}>
-          <img key={lesson.image.src} src={lesson.image.src} alt={lesson.image.alt} />
+          <AnnotatedPlantImage key={lesson.image.src} image={lesson.image} annotation={lesson.annotation} />
           <span>{isLastStep ? 'All discoveries explored · Click to enlarge' : 'Click or tap the picture for the next discovery →'}</span>
         </button>
         <div className="lesson-caption">

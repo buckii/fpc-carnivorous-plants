@@ -1426,3 +1426,12 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
 .challenge-screen { background: url('/images/original/1-image4.jpg') center / cover no-repeat; }
 .challenge-prompt .bog-page-title { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: .5rem; }
 .challenge-prompt h2 { font-size: clamp(1.1rem, 2.5vw, 1.6rem); margin: 0 auto .75rem; max-width: 850px; }
+/* The guide has a distinct, approved teal action color. */
+.home-screen .btn-guide { background: #006682; color: white; border-color: #006682; }
+.home-screen .btn-guide:hover { background: #572700; border-color: #572700; }
+.guided-lesson .lesson-photo .annotated-plant-image { position: absolute; inset: 0 0 2.6rem; }
+.guided-lesson .lesson-photo .annotated-plant-image img { display: block; width: 100%; height: 100%; padding: 0; object-fit: contain; }
+.plant-part-arrow { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+@media (max-width: 700px) {
+  .guided-lesson .lesson-photo .annotated-plant-image { bottom: 2.2rem; }
+}
