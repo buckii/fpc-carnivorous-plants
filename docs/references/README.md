@@ -60,3 +60,5 @@ The latest color preference supersedes the earlier all-page light brown bars: no
 The photo lesson sequence is assembled by `src/components/subject/lessonSteps.js`, preserving all existing content while ensuring adjacent steps use different images. Current sequences contain 10 Bladderwort, 10 Pitcher Plant, 11 Sundew, 11 Venus Flytrap, and 7 Butterwort discoveries. Browser checks covered all 49 discoveries at desktop and two phone sizes, photo/fact changes, gated return controls, videos, zoom, and the final game unlock.
 
 The latest information-page background replaces PMS 615 with the exact cream sampled from [the supplied screenshot](information-background-color.png): `#F0E9D9` (RGB 240, 233, 217). This replaces the previous PMS 615 areas, including non-home-page headers and footers. The home page keeps its existing styling.
+
+The home-page header and footer now also use the screenshot cream `#F0E9D9`, with dark brown `#572700` text. This supersedes the earlier home-page exception for these bars; the other home-page elements retain their existing styling.

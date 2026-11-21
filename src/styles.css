@@ -1345,9 +1345,9 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
 }
 .home-screen .btn { border-color: var(--brown-mid); }
 
-/* Screenshot-matched cream information pages; the home page retains its existing colors. */
-.screen:not(.home-screen) .site-header,
-.screen:not(.home-screen) + .site-footer {
+/* Screenshot-matched cream header and footer bars on every page. */
+.screen .site-header,
+.screen + .site-footer {
   background: #F0E9D9;
   color: #572700;
 }
