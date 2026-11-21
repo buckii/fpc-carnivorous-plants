@@ -28,7 +28,6 @@ export default function SubjectDetailScreen({ subject, onNavigate, onComplete })
       <div className="photo-lesson">
         <button className="lesson-photo" onClick={nextFact} aria-disabled={isLastStep} aria-label={isLastStep ? 'Final plant photo — all discoveries explored' : 'Show the next plant photo and facts'}>
           <AnnotatedPlantImage key={lesson.image.src} image={lesson.image} annotation={lesson.annotation} />
-          <span>{isLastStep ? 'All discoveries explored · Use Enlarge image for a close-up' : 'Click or tap the picture for the next discovery →'}</span>
         </button>
         <div className="lesson-caption">
           <div className="discovery-copy" aria-live="polite" aria-atomic="true">

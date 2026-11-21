@@ -1376,9 +1376,8 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
 .lesson-title h1 { font-size: clamp(1.4rem, 2.5vw, 2.2rem); }
 .lesson-title p { margin: 0; font-size: .9rem; }
 .guided-lesson .photo-lesson { flex: 1; min-height: 0; margin: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
-.guided-lesson .lesson-photo { height: 100%; min-height: 0; cursor: pointer; }
-.guided-lesson .lesson-photo img { height: 100%; padding-bottom: 2.6rem; }
-.guided-lesson .lesson-photo span { padding: .6rem .5rem; font-size: .85rem; }
+.guided-lesson .lesson-photo { height: 100%; min-height: 0; cursor: pointer; border: 0; border-radius: 0; padding: 0; background: transparent; }
+.guided-lesson .lesson-photo img { height: 100%; padding: 0; }
 .guided-lesson .lesson-caption { align-self: stretch; display: flex; flex-direction: column; min-height: 0; overflow-y: auto; padding: clamp(1rem, 2vw, 1.75rem); }
 .guided-lesson .lesson-caption h2 { font-family: var(--font-primary); font-size: clamp(1.5rem, 2.2vw, 2rem); line-height: 1.3; }
 .discovery-fact { font-size: clamp(1.15rem, 1.7vw, 1.5rem); line-height: 1.5; }
@@ -1395,9 +1394,7 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
   .lesson-title h1 { font-size: 1.3rem; }
   .lesson-title p { font-size: .7rem; }
   .guided-lesson .photo-lesson { display: grid; grid-template-columns: 1fr; grid-template-rows: minmax(0, 1fr) minmax(0, 1fr); gap: .45rem; }
-  .guided-lesson .lesson-photo { grid-column: 1; grid-row: 1; min-height: 0; border-radius: 12px; }
-  .guided-lesson .lesson-photo img { padding-bottom: 2.2rem; }
-  .guided-lesson .lesson-photo span { font-size: .75rem; padding: .5rem .25rem; }
+  .guided-lesson .lesson-photo { grid-column: 1; grid-row: 1; min-height: 0; border-radius: 0; }
   .guided-lesson .lesson-caption { grid-column: 1; grid-row: 2; padding: .65rem .8rem; border-radius: 12px; }
   .guided-lesson .lesson-caption h2 { font-size: 1.25rem; margin-bottom: .5rem; }
   .guided-lesson .eyebrow { margin-bottom: .35rem; }
@@ -1430,12 +1427,9 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
 /* The guide has a distinct, approved teal action color. */
 .home-screen .btn-guide { background: #006682; color: white; border-color: #006682; }
 .home-screen .btn-guide:hover { background: #572700; border-color: #572700; }
-.guided-lesson .lesson-photo .annotated-plant-image { position: absolute; inset: 0 0 2.6rem; }
+.guided-lesson .lesson-photo .annotated-plant-image { position: absolute; inset: 0; }
 .guided-lesson .lesson-photo .annotated-plant-image img { display: block; width: 100%; height: 100%; padding: 0; object-fit: contain; }
 .plant-part-arrow { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
-@media (max-width: 700px) {
-  .guided-lesson .lesson-photo .annotated-plant-image { bottom: 2.2rem; }
-}
 .guided-lesson .lesson-photo[aria-disabled="true"] { cursor: default; }
 /* Reveal the closing joke in two uncluttered steps. */
 .screen.active.end-screen { min-height: 100dvh; display: flex; align-items: center; justify-content: center; padding: 2rem 1.25rem; background: #F0E9D9; }
