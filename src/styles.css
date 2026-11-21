@@ -1454,3 +1454,73 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
   .lesson-shell .header-logo { width: 38%; }
   .lesson-shell .header-program { font-size: .7rem; }
 }
+
+/* Keep each complete activity in view; long reading uses page controls. */
+html, body, #root { height: 100%; min-height: 0; overflow: hidden; }
+.viewport-frame { width: 100%; height: 100dvh; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #F0E9D9; }
+.viewport-position { width: 100%; flex-shrink: 0; position: relative; }
+.viewport-content { width: 100%; transform-origin: top center; }
+.viewport-content .screen { min-height: 0; animation: none; }
+.viewport-content .site-header { position: static; padding: .4rem 1rem; }
+.viewport-content .header-logo { width: clamp(130px, 22vw, 235px); }
+.viewport-content .header-branding { gap: 1.5rem; }
+.viewport-content .header-program { padding: .6rem 0 .6rem 1.5rem; font-size: clamp(.7rem, 1.4vw, 1.1rem); }
+.viewport-content .header-title { font-size: 1rem; }
+.viewport-content .site-footer { position: static; padding: .4rem 1rem; }
+.viewport-content .site-footer p { margin: 0; font-size: .7rem; }
+.viewport-content .content-card { margin: 1rem auto; padding: 1.25rem; }
+.page-controls { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1.25rem; font-family: var(--font-secondary); }
+.page-controls span { white-space: nowrap; }
+.paged-content > .btn { display: block; margin: 1rem auto 0; }
+.viewport-content .hero { min-height: 0; padding: 1rem; }
+.viewport-content .hero-content { padding: 1.25rem 2rem; }
+.viewport-content .home-logo { width: 180px; padding: 0; margin-bottom: .5rem; }
+.viewport-content .hero-content h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: .6rem; }
+.viewport-content .hero-tagline { margin-bottom: .75rem; }
+.viewport-content .home-credit { margin-top: .75rem; }
+.viewport-content .hero-buttons { gap: .6rem; }
+.viewport-content .lesson-shell { height: auto; overflow: visible; }
+.viewport-content .guided-lesson .plant-content { flex: none; }
+.viewport-content .guided-lesson .photo-lesson { flex: none; min-height: 65dvh; }
+.viewport-content .guided-lesson .lesson-photo { height: auto; min-height: 65dvh; }
+.viewport-content .guided-lesson .lesson-caption { overflow: visible; }
+.viewport-content .field-guide-inner { padding: 1rem; }
+.viewport-content .field-guide-intro { margin-bottom: .75rem; }
+.viewport-content .article-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .75rem; }
+.viewport-content .article-box, .viewport-content .article-box:nth-child(4), .viewport-content .article-box:nth-child(5) { grid-column: auto; display: block; }
+.viewport-content .article-box > img { height: clamp(110px, 22dvh, 220px); }
+.viewport-content .article-box > div { padding: .75rem; }
+.viewport-content .article-box h2 { font-size: 1.15rem; }
+.viewport-content .guide-progress { margin: .75rem 0 0; }
+.viewport-content .guide-progress p { margin: .25rem 0; }
+.viewport-content .bog-entry-arrow svg { width: 140px; }
+.viewport-content .identification { min-height: 70dvh; padding: 1rem; }
+.viewport-content .habitat { min-height: 400px; height: 55dvh; }
+.viewport-content .frog-finish { min-height: 0; padding: 1rem; }
+.viewport-content .end-screen { min-height: 0; padding: 2rem 1rem; }
+@media (max-width: 700px) {
+  .viewport-content .header-branding { gap: .75rem; }
+  .viewport-content .header-logo { width: 40%; }
+  .viewport-content .header-program { padding-left: .75rem; font-size: .7rem; }
+  .viewport-content .hero-content { padding: 1rem; }
+  .viewport-content .field-guide-intro { gap: .6rem; }
+  .viewport-content .field-guide-intro img { width: 45px; }
+  .viewport-content .field-guide-intro h1 { font-size: 1.5rem; }
+  .viewport-content .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; }
+  .viewport-content .article-box > img { height: 90px; }
+  .viewport-content .article-box > div { padding: .4rem; }
+  .viewport-content .article-box h2 { font-size: 1rem; margin: .2rem 0; }
+  .viewport-content .article-box p { margin-bottom: .25rem; }
+  .viewport-content .article-box .eyebrow { font-size: .65rem; }
+  .viewport-content .article-box span:last-child { font-size: .8rem; }
+  .viewport-content .guided-lesson .photo-lesson { grid-template-rows: auto auto; min-height: 0; }
+  .viewport-content .guided-lesson .lesson-photo { height: 32dvh; min-height: 200px; }
+  .viewport-content .page-controls { gap: .4rem; font-size: .85rem; }
+  .viewport-content .page-controls .btn { padding: .6rem .8rem; }
+  .viewport-content .identification { min-height: 70dvh; align-items: flex-end; }
+}
+.image-viewer .viewer-image { overflow: hidden; touch-action: none; cursor: grab; position: relative; }
+.image-viewer .viewer-image:active { cursor: grabbing; }
+.image-viewer .viewer-image img { width: 100%; height: 100%; min-height: 0; max-height: 100%; object-fit: contain; user-select: none; }
+.image-viewer .viewer-toolbar p { max-height: none; overflow: visible; }
+.viewport-content .habitat-plant:hover { transform: none; }
