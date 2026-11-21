@@ -37,7 +37,7 @@ export default function App() {
   }, [])
 
   function navigate(screenId) {
-    if (screenId === 'restart') {
+    if (screenId === 'restart' || screenId === homeScreenId) {
       setVisitedSubjects(new Set())
       setCurrentScreen(homeScreenId)
       window.scrollTo(0, 0)
