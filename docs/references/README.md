@@ -54,3 +54,5 @@ The main page uses the lighter brand brown `#935D3C` (PMS 464) for the header, f
 The main-page “Carnivorous Plants” title uses the original dark brown `#572700`; the surrounding main-page accents retain the lighter brown `#935D3C`.
 
 All page header and footer bars use the lighter brand brown `#935D3C` (PMS 464), matching the home page. The main-page “Carnivorous Plants” title remains dark brown `#572700`.
+
+The latest color preference supersedes the earlier all-page light brown bars: non-home-page headers, footers, and information panels use PMS 615 (`#DBD095`). Their header/footer text uses dark brown for readability. The home page retains its light brown bars and dark brown title. Photographic backgrounds and action-button colors remain intact.

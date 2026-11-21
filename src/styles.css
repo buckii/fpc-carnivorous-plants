@@ -1344,3 +1344,23 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
   color: var(--brown-mid);
 }
 .home-screen .btn { border-color: var(--brown-mid); }
+
+/* PMS 615 information pages; the home page retains its existing colors. */
+.screen:not(.home-screen) .site-header,
+.screen:not(.home-screen) + .site-footer {
+  background: #DBD095;
+  color: #572700;
+}
+.screen:not(.home-screen) .back-btn {
+  background: #572700;
+  color: white;
+}
+.screen:not(.home-screen) .back-btn:hover { background: #935D3C; }
+.screen:not(.home-screen) :is(
+  .content-card, .fact-card, .lesson-caption, .video-section,
+  .article-box, .guide-card, .tutorial-step, .standard-card,
+  .prompt-card, .challenge-prompt, .identification-card,
+  .resource-row:not(.resource-header)
+) {
+  background: #DBD095;
+}
