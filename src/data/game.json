@@ -77,12 +77,12 @@
         {
           "number": 1,
           "title": "Meet the plants",
-          "body": "Start with the five plant boxes. Read the articles and click each lesson photo to reveal short facts and close-up views."
+          "body": "Choose one of the five plant pictures. In each lesson, click or tap the large picture to change the photo and reveal the next facts. No scrolling is needed."
         },
         {
           "number": 2,
           "title": "Explore every lesson",
-          "body": "Use Back to the Bog to return to the field guide. A check mark appears after you reveal every photo fact in a lesson."
+          "body": "Click through every discovery for a plant, including its field notes and video information. Back to the Bog unlocks only at the final discovery. Complete all five plants to unlock the bog challenge."
         },
         {
           "number": 3,
@@ -412,7 +412,7 @@
       "backTarget": "home",
       "headerTitle": "The Bog",
       "heading": "Your bog field guide",
-      "introText": "Meet Mr. Fly! Open every plant box and click through its photos to discover how it catches prey. Complete all five to unlock the bog challenge.",
+      "introText": "Meet Mr. Fly! Choose a plant, then click its picture to explore every photo and fact. Back to the Bog unlocks after the final discovery. Finish all five plants to unlock the challenge.",
       "completionText": "All five plants explored! Follow the arrow to put your knowledge to the test.",
       "progressLabel": "Plants discovered:"
     },

@@ -27,7 +27,7 @@ Use Droid Serif for headings, with Georgia as the approved computer fallback. Th
 
 ## Current learning flow
 
-Five plant lessons cover Bladderwort, Pitcher Plant, Sundew, Venus Flytrap, and Butterwort. Each lesson contains three clickable photo discoveries plus reading sections. Revealing the last discovery completes a lesson. After all five lessons are complete, an arrow unlocks the bog challenge.
+Five plant lessons cover Bladderwort, Pitcher Plant, Sundew, Venus Flytrap, and Butterwort. Each lesson presents all discoveries, reading sections, and fun facts in a single-screen sequence. Clicking the large plant picture changes the photo and facts together, without scrolling through articles. Video links appear as their own discovery step. Only reaching the final discovery completes a lesson and unlocks both return-to-bog controls. After all five lessons are complete, an arrow unlocks the bog challenge.
 
 The challenge includes five plant-finding prompts, then four Butterwort identification rounds: Butterwort (Yes), Sundew (No), Ghost Plant (No), and Butterwort (Yes). Wrong answers offer retries. The frog leads to the joke and congratulations screen. Play Again resets progress and returns home. Progress is currently limited to the page session and resets on reload.
 
@@ -56,3 +56,5 @@ The main-page “Carnivorous Plants” title uses the original dark brown `#5727
 All page header and footer bars use the lighter brand brown `#935D3C` (PMS 464), matching the home page. The main-page “Carnivorous Plants” title remains dark brown `#572700`.
 
 The latest color preference supersedes the earlier all-page light brown bars: non-home-page headers, footers, and information panels use PMS 615 (`#DBD095`). Their header/footer text uses dark brown for readability. The home page retains its light brown bars and dark brown title. Photographic backgrounds and action-button colors remain intact.
+
+The photo lesson sequence is assembled by `src/components/subject/lessonSteps.js`, preserving all existing content while ensuring adjacent steps use different images. Current sequences contain 10 Bladderwort, 10 Pitcher Plant, 11 Sundew, 11 Venus Flytrap, and 7 Butterwort discoveries. Browser checks covered all 49 discoveries at desktop and two phone sizes, photo/fact changes, gated return controls, videos, zoom, and the final game unlock.

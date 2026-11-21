@@ -69,7 +69,7 @@ export default function App() {
 
   if (activeSubject) {
     return (
-      <>
+      <div className="lesson-shell">
         <SubjectDetailScreen
           key={activeSubject.id}
           subject={activeSubject}
@@ -78,7 +78,7 @@ export default function App() {
           onNavigate={navigate}
         />
         <SiteFooter text={meta.footerText} />
-      </>
+      </div>
     )
   }
 

@@ -1,33 +1,49 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import SiteHeader from '../layout/SiteHeader.jsx'
-import SectionCard from '../subject/SectionCard.jsx'
 import ImageViewer from '../subject/ImageViewer.jsx'
+import { createLessonSteps } from '../subject/lessonSteps.js'
 
 export default function SubjectDetailScreen({ subject, onNavigate, onComplete }) {
+  const steps = useMemo(() => createLessonSteps(subject), [subject])
   const [step, setStep] = useState(0)
-  const [expanded, setExpanded] = useState(false)
+  const [furthestStep, setFurthestStep] = useState(0)
   const [zoomed, setZoomed] = useState(false)
-  const lesson = subject.lesson[step]
+  const lesson = steps[step]
+  const isLastStep = step === steps.length - 1
+  const completed = furthestStep === steps.length - 1
+
   function nextFact() {
-    const next = Math.min(step + 1, subject.lesson.length - 1)
+    if (isLastStep) return
+    const next = step + 1
     setStep(next)
-    if (next === subject.lesson.length - 1) onComplete(subject.id)
+    setFurthestStep(previous => Math.max(previous, next))
+    if (next === steps.length - 1) onComplete(subject.id)
   }
-  return <div className="screen active plant-screen">
-    <SiteHeader title={subject.name} backTarget="scene" onNavigate={onNavigate} />
+
+  return <div className="screen active plant-screen guided-lesson">
+    <SiteHeader title={subject.name} backTarget={completed ? 'scene' : undefined} onNavigate={onNavigate} />
     <main className="plant-content">
-      <p className="eyebrow">Bog field notes · <em>{subject.subtitle}</em></p><h1>{subject.name}</h1>
+      <div className="lesson-title"><h1>{subject.name}</h1><p><em>{subject.subtitle}</em></p></div>
       <div className="photo-lesson">
-        <button className="lesson-photo" onClick={step < subject.lesson.length - 1 ? nextFact : () => setZoomed(true)} aria-label={step < subject.lesson.length - 1 ? 'Reveal the next plant photo and fact' : 'Toggle close-up view'}>
-          <img src={lesson.image.src} alt={lesson.image.alt} />
-          <span>{step < subject.lesson.length - 1 ? 'Click the photo to look closer →' : 'Click for a close-up'}</span>
+        <button className="lesson-photo" onClick={isLastStep ? () => setZoomed(true) : nextFact} aria-label={isLastStep ? 'Enlarge the final plant photo' : 'Show the next plant photo and facts'}>
+          <img key={lesson.image.src} src={lesson.image.src} alt={lesson.image.alt} />
+          <span>{isLastStep ? 'All discoveries explored · Click to enlarge' : 'Click or tap the picture for the next discovery →'}</span>
         </button>
-        <div className="lesson-caption" aria-live="polite"><p className="eyebrow">Discovery {step + 1} / {subject.lesson.length}</p><img className="lesson-guide" src="images/slide-07-mr-fly-character.png" alt="" /><h2>{lesson.fact}</h2><button className="btn btn-accent" onClick={() => setZoomed(true)}>Enlarge image ⤢</button><div className="answer-buttons"><button className="btn btn-secondary" disabled={step === 0} onClick={() => {setStep(step - 1);setZoomed(false)}}>← Previous</button>{step < subject.lesson.length - 1 && <button className="btn btn-primary" onClick={nextFact}>Next fact →</button>}</div></div>
+        <div className="lesson-caption">
+          <div className="discovery-copy" aria-live="polite" aria-atomic="true">
+            <p className="eyebrow">Discovery {step + 1} of {steps.length}</p>
+            <h2>{lesson.heading}</h2>
+            <p className="discovery-fact" dangerouslySetInnerHTML={{ __html: lesson.body }} />
+            {lesson.video && <a className="btn btn-primary lesson-video" href={lesson.video.url} target="_blank" rel="noopener noreferrer">Watch video ↗ <span>(opens in a new tab)</span></a>}
+          </div>
+          <div className="lesson-controls">
+            <button className="btn btn-accent" onClick={() => setZoomed(true)}>Enlarge image ⤢</button>
+            <button className="btn btn-secondary" disabled={step === 0} onClick={() => setStep(step - 1)}>← Previous</button>
+          </div>
+          <p className="lesson-instruction">{isLastStep ? 'You explored every part of this plant’s lesson!' : 'Click the picture to change the photo and learn the next fact.'}</p>
+          {completed ? <button className="btn btn-primary lesson-return" onClick={() => onNavigate('scene')}>Back to the Bog</button> : <p className="lesson-lock">Back to the Bog unlocks after all {steps.length} discoveries.</p>}
+        </div>
       </div>
-      {subject.video && <section className="video-section"><div><p className="eyebrow">Watch & discover</p><h2>{subject.video.title}</h2><p>Click the screen to watch on YouTube. The video opens in a new tab; return here when finished.</p></div><a className="video-tv" href={subject.video.url} target="_blank" rel="noopener noreferrer" aria-label={`${subject.video.title} Watch on YouTube (opens in a new tab)`}><img src={subject.video.image} alt="Video preview from the original slides" /><span>▶ Play video</span></a></section>}
-      <div className="section-heading"><h2>Read the field notes</h2><button className="btn btn-secondary" aria-expanded={expanded} onClick={() => setExpanded(!expanded)}>{expanded ? 'Hide extra facts' : 'Learn more'}</button></div>
-      <div className="plant-facts">{subject.sections.map((section, i) => <SectionCard key={i} section={section} revealed={expanded} delayIndex={0} />)}</div>
-      <button className="btn btn-primary mt-lg" onClick={() => onNavigate('scene')}>Back to the Bog</button>
       {zoomed && <ImageViewer image={lesson.image} onClose={() => setZoomed(false)} />}
     </main>
   </div>

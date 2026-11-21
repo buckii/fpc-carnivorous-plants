@@ -1364,3 +1364,53 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
 ) {
   background: #DBD095;
 }
+
+/* A plant lesson is one viewport-sized activity, advanced through its photo. */
+.lesson-shell { height: 100dvh; display: flex; flex-direction: column; overflow: hidden; }
+.lesson-shell .guided-lesson { flex: 1; min-height: 0; display: flex; flex-direction: column; animation: none; }
+.lesson-shell .site-header { position: static; flex-shrink: 0; padding-block: .7rem; }
+.lesson-shell .site-footer { flex-shrink: 0; padding: .5rem 1rem; }
+.lesson-shell .site-footer p { margin: 0; font-size: .75rem; }
+.guided-lesson .plant-content { flex: 1; min-height: 0; width: 100%; display: flex; flex-direction: column; padding: .6rem 1.25rem 1rem; }
+.lesson-title { display: flex; align-items: baseline; gap: 1rem; margin-bottom: .6rem; }
+.lesson-title h1 { font-size: clamp(1.4rem, 2.5vw, 2.2rem); }
+.lesson-title p { margin: 0; font-size: .9rem; }
+.guided-lesson .photo-lesson { flex: 1; min-height: 0; margin: 0; grid-template-columns: minmax(260px, 36%) minmax(0, 1fr); align-items: stretch; }
+.guided-lesson .lesson-photo { height: 100%; min-height: 0; cursor: pointer; }
+.guided-lesson .lesson-photo img { height: 100%; padding-bottom: 2.6rem; }
+.guided-lesson .lesson-photo span { padding: .6rem .5rem; font-size: .85rem; }
+.guided-lesson .lesson-caption { align-self: stretch; display: flex; flex-direction: column; min-height: 0; padding: clamp(.8rem, 1.7vw, 1.5rem); }
+.guided-lesson .lesson-caption h2 { font-family: var(--font-primary); font-size: clamp(1.15rem, 1.8vw, 1.6rem); line-height: 1.25; }
+.discovery-fact { font-size: clamp(.95rem, 1.3vw, 1.15rem); line-height: 1.5; }
+.lesson-controls { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: auto; padding-top: .6rem; }
+.guided-lesson .lesson-caption .btn { padding: .55rem .8rem; font-size: .9rem; min-height: 42px; }
+.lesson-instruction, .lesson-lock { font-size: .85rem; line-height: 1.4; margin: .7rem 0 0; }
+.lesson-lock { font-weight: bold; }
+.lesson-return { margin-top: .7rem; }
+.lesson-video span { font-size: .75rem; }
+@media (max-width: 700px) {
+  .guided-lesson .plant-content { padding: .4rem .65rem .65rem; }
+  .lesson-title { gap: .6rem; margin-bottom: .4rem; }
+  .lesson-title h1 { font-size: 1.3rem; }
+  .lesson-title p { font-size: .7rem; }
+  .guided-lesson .photo-lesson { display: grid; grid-template-columns: 1fr; grid-template-rows: minmax(140px, 1fr) auto; gap: .45rem; }
+  .guided-lesson .lesson-photo { grid-column: 1; grid-row: 1; min-height: 0; border-radius: 12px; }
+  .guided-lesson .lesson-photo img { padding-bottom: 2.2rem; }
+  .guided-lesson .lesson-photo span { font-size: .75rem; padding: .5rem .25rem; }
+  .guided-lesson .lesson-caption { grid-column: 1; grid-row: 2; padding: .65rem .8rem; border-radius: 12px; }
+  .guided-lesson .lesson-caption h2 { font-size: 1rem; margin-bottom: .4rem; }
+  .guided-lesson .eyebrow { margin-bottom: .35rem; }
+  .discovery-fact { font-size: .88rem; line-height: 1.4; margin-bottom: .3rem; }
+  .lesson-controls { padding-top: .25rem; flex-wrap: nowrap; }
+  .guided-lesson .lesson-caption .btn { font-size: .8rem; padding: .4rem .6rem; min-height: 36px; }
+  .lesson-instruction { display: none; }
+  .lesson-lock { font-size: .75rem; margin-top: .4rem; }
+  .lesson-return { margin-top: .4rem; }
+  .lesson-shell .site-footer p { font-size: .6rem; }
+}
+@media (max-height: 550px) and (min-width: 701px) {
+  .guided-lesson .lesson-caption { padding: .65rem; }
+  .discovery-fact { font-size: .85rem; line-height: 1.3; }
+  .guided-lesson .lesson-caption h2 { font-size: 1rem; }
+  .lesson-instruction { display: none; }
+}
