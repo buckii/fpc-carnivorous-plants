@@ -1339,7 +1339,7 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
   background: var(--brown-mid);
 }
 .home-screen .btn-secondary:hover { background: var(--brown-dark); }
-.home-screen .hero-content h1,
+.home-screen .hero-content h1 { color: var(--brown-dark); }
 .home-screen .eyebrow,
 .home-screen .hero-tagline,
 .home-screen .home-credit {
