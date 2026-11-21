@@ -339,7 +339,7 @@ strong { font-weight: 700; }
 }
 
 .guide-card {
-  background: var(--bg-cream);
+  background: #FFFFFF;
   border: 2px solid var(--tan);
   border-radius: 10px;
   padding: var(--space-md);
@@ -1358,7 +1358,7 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
 .screen:not(.home-screen) .back-btn:hover { background: #935D3C; }
 .screen:not(.home-screen) :is(
   .content-card, .fact-card, .lesson-caption, .video-section,
-  .article-box, .guide-card, .tutorial-step, .standard-card,
+  .article-box, .tutorial-step, .standard-card,
   .prompt-card, .challenge-prompt, .identification-card,
   .resource-row:not(.resource-header)
 ) {
