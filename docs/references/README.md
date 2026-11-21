@@ -70,3 +70,5 @@ The home-page Teacher’s Guide button uses brand teal `#006682`, distinct from 
 Clicking the lesson picture only advances discoveries; the final picture no longer opens the image viewer. Zoom opens exclusively through the Enlarge image button. Every navigation to the home page now clears completion progress, removes card fog, and locks THE BOG again, so Start Exploring begins a fresh game.
 
 The shared top header now follows the [supplied header reference](header-reference.png): the full-color Conservatory logo appears to the left of a brown divider, with “School Program Classroom Extension” in uppercase dark brown on the cream background. Page titles and existing back controls remain below the branding. The masthead adapts for mobile and is compact in plant lessons; the joke ending remains free of a header.
+
+The logo and “School Program Classroom Extension” masthead now appears only on the start page. All other pages retain simple title headers and their existing back controls. This supersedes the earlier shared-masthead direction.
