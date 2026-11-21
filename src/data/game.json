@@ -754,8 +754,8 @@
       "backTarget": "scene",
       "heroColorClass": "plant-hero--butterwort",
       "sceneImage": {
-        "src": "images/slide-22-butterwort-icon.png",
-        "alt": "Butterwort with a rosette of leaves"
+        "src": "images/butterwort-photo.png",
+        "alt": "Butterwort with a pink flower bud and overlapping green and purple leaves"
       },
       "sections": [
         {

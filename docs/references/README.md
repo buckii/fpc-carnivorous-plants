@@ -45,3 +45,8 @@ The teacher resources include the detailed K–8 standards, books, video list, a
 `src/data/game.json` contains lesson facts, source image references, video links, challenge prompts, identification rounds, and teacher resources. `src/components/screens/SubjectDetailScreen.jsx` renders the lessons; `ChallengeScreen.jsx` renders the games; `SceneScreen.jsx` renders the field guide. `src/components/subject/ImageViewer.jsx` implements the image viewer, and `SectionCard.jsx` provides interactive article images. Branding and responsive layouts are in `src/styles.css`; the heading font is loaded in `index.html`. Extracted source artwork used by the app is in `public/images/original/`.
 
 Previous Chromium checks passed for all lessons, game unlocking, quiz rounds and retries, replay reset, video URLs, standards, image availability, enlarged images, zoom, Escape/Close handling, and responsive layouts. These results describe the completed revisions; rerun relevant checks when changing behavior. Production builds are validated by the deployment system.
+
+
+## Latest main-page and Butterwort update
+
+The main page uses the lighter brand brown `#935D3C` (PMS 464) for the header, footer, secondary buttons, and main text accents. The original logo artwork keeps its approved colors. Plant 05 in the bog field guide uses the user-supplied Butterwort photograph, saved at `public/images/butterwort-photo.png`, in place of the cartoon. Its existing link still opens the Butterwort lesson.

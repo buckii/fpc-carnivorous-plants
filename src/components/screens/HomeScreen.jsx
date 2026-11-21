@@ -2,7 +2,7 @@ import SiteHeader from '../layout/SiteHeader.jsx'
 
 export default function HomeScreen({ screen, meta, onNavigate }) {
   return (
-    <div className="screen active">
+    <div className="screen active home-screen">
       <SiteHeader title={meta.headerTitle} onNavigate={onNavigate} />
       <div className="hero">
         <div className="hero-overlay"></div>

@@ -1331,3 +1331,18 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
   .fact-card.hidden-fact:not(.revealed) { display: none; }
 }
 .image-viewer .viewer-image img { max-height: none; height: auto; }
+
+/* Main menu uses the lighter PMS 464 brown from the brand palette. */
+.home-screen .site-header,
+.home-screen + .site-footer,
+.home-screen .btn-secondary {
+  background: var(--brown-mid);
+}
+.home-screen .btn-secondary:hover { background: var(--brown-dark); }
+.home-screen .hero-content h1,
+.home-screen .eyebrow,
+.home-screen .hero-tagline,
+.home-screen .home-credit {
+  color: var(--brown-mid);
+}
+.home-screen .btn { border-color: var(--brown-mid); }
