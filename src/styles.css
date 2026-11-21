@@ -15,7 +15,7 @@
   --light-blue: #A1D2DD;
   --gray: #B8B1AB;
   --brown-mid: #935D3C;
-  --tan: #DBD095;
+  --tan: #F0E9D9;
   --orange-deep: #DA6126;
   --yellow-green-light: #CFDD3A;
   --gold: #F99F1C;
@@ -1214,12 +1214,12 @@ h1:focus, h2:focus { outline: none; }
   --forest-green: #77833C;
   --text-primary: #572700;
   --text-body: #572700;
-  --bg-cream: #DBD095;
-  --tan: #DBD095;
+  --bg-cream: #F0E9D9;
+  --tan: #F0E9D9;
   --font-primary: 'Droid Serif', Georgia, serif;
   --font-secondary: Arial, sans-serif;
 }
-body { background: #DBD095; }
+body { background: #F0E9D9; }
 .site-header, .site-header--dark, .site-footer { background: var(--brown-mid); }
 .header-inner { max-width: 1600px; }
 h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
@@ -1233,15 +1233,15 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
 .hero-content { background: white; }
 .home-logo { padding: 1rem 0; }
 .hero-tagline, .article-box, .habitat-plant span { color: #572700; }
-.field-guide { background: #DBD095; }
+.field-guide { background: #F0E9D9; }
 .field-guide-inner { max-width: 1500px; padding: 1.5rem; }
 .field-guide-intro { max-width: 1100px; margin-bottom: 1.5rem; }
 .article-box { border-color: #935D3C; }
-.article-box > img { height: 260px; background: #DBD095; object-fit: cover; }
+.article-box > img { height: 260px; background: #F0E9D9; object-fit: cover; }
 .article-box:nth-child(4) > img, .article-box:nth-child(5) > img { height: 100%; min-height: 230px; }
 .article-box > div { padding: 1rem; }
 .article-box.complete { border-color: #77833C; }
-.plant-screen { background: #DBD095; }
+.plant-screen { background: #F0E9D9; }
 .plant-content { max-width: 1600px; padding: 1.25rem clamp(1rem, 3vw, 3rem) 2rem; }
 .plant-content > .eyebrow { margin-bottom: .4rem; }
 .plant-content > h1 { font-size: clamp(1.8rem, 3.3vw, 3rem); margin-bottom: 1rem; }
@@ -1264,7 +1264,7 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
 .fact-image-button img { display: block; width: 100%; height: clamp(250px, 32vw, 480px); max-height: none; object-fit: contain; }
 .fact-image-button span { display: block; background: #572700; color: white; padding: .65rem; font: bold 1rem var(--font-secondary); }
 .fact-image-button:hover img { opacity: .9; }
-.challenge-screen, .challenge-prompt { background: #DBD095; }
+.challenge-screen, .challenge-prompt { background: #F0E9D9; }
 .challenge-prompt { min-height: 0; padding: 1rem; }
 .habitat { height: calc(100vh - 230px); min-height: 520px; }
 .habitat-plant img { height: clamp(160px, 26vh, 300px); }
@@ -1277,7 +1277,7 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
 .identification-card .answer-buttons .btn-primary { background: #D5D10E; }
 .identification-card .answer-buttons .btn-secondary { background: #F8971D; color: #572700; }
 .correct-badge { background: #CFDD3A; color: #572700; border: 2px solid #572700; }
-.image-viewer { position: fixed; inset: 0; width: min(96vw, 1600px); max-width: 96vw; height: 94dvh; max-height: 94dvh; margin: auto; border: 3px solid #572700; border-radius: 18px; padding: 0; background: #DBD095; color: #572700; }
+.image-viewer { position: fixed; inset: 0; width: min(96vw, 1600px); max-width: 96vw; height: 94dvh; max-height: 94dvh; margin: auto; border: 3px solid #572700; border-radius: 18px; padding: 0; background: #F0E9D9; color: #572700; }
 .image-viewer::backdrop { background: rgba(87,39,0,.8); }
 .image-viewer[open] { display: flex; flex-direction: column; }
 .viewer-toolbar { display: flex; align-items: center; gap: 1rem; padding: .75rem 1rem; border-bottom: 2px solid #572700; }
@@ -1345,10 +1345,10 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
 }
 .home-screen .btn { border-color: var(--brown-mid); }
 
-/* PMS 615 information pages; the home page retains its existing colors. */
+/* Screenshot-matched cream information pages; the home page retains its existing colors. */
 .screen:not(.home-screen) .site-header,
 .screen:not(.home-screen) + .site-footer {
-  background: #DBD095;
+  background: #F0E9D9;
   color: #572700;
 }
 .screen:not(.home-screen) .back-btn {
@@ -1362,7 +1362,7 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
   .prompt-card, .challenge-prompt, .identification-card,
   .resource-row:not(.resource-header)
 ) {
-  background: #DBD095;
+  background: #F0E9D9;
 }
 
 /* A plant lesson is one viewport-sized activity, advanced through its photo. */
