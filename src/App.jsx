@@ -112,7 +112,7 @@ export default function App() {
   return (
     <>
       {screenElement}
-      <SiteFooter text={meta.footerText} />
+      {currentScreen !== endScreenId && <SiteFooter text={meta.footerText} />}
     </>
   )
 }

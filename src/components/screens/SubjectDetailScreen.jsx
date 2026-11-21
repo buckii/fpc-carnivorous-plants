@@ -42,7 +42,7 @@ export default function SubjectDetailScreen({ subject, onNavigate, onComplete })
             <button className="btn btn-secondary" disabled={step === 0} onClick={() => setStep(step - 1)}>← Previous</button>
           </div>
           <p className="lesson-instruction">{isLastStep ? 'You explored every part of this plant’s lesson!' : 'Click the picture to change the photo and learn the next fact.'}</p>
-          {completed ? <button className="btn btn-primary lesson-return" onClick={() => onNavigate('scene')}>Back to the Bog</button> : <p className="lesson-lock">Back to the Bog unlocks after all {steps.length} discoveries.</p>}
+          {completed ? <button className="btn btn-primary lesson-return" onClick={() => onNavigate('scene')}>Back to the Information Center</button> : <p className="lesson-lock">Back to the Information Center unlocks after all {steps.length} discoveries.</p>}
         </div>
       </div>
       {zoomed && <ImageViewer image={lesson.image} onClose={() => setZoomed(false)} />}

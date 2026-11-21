@@ -82,7 +82,7 @@
         {
           "number": 2,
           "title": "Explore every lesson",
-          "body": "Click through every discovery for a plant, including its field notes and video information. Back to the Bog unlocks only at the final discovery. Complete all five plants to unlock the bog challenge. Completed plant cards become fogged over in the Information Center."
+          "body": "Click through every discovery for a plant, including its field notes and video information. Back to the Information Center unlocks only at the final discovery. Complete all five plants to unlock the bog challenge. Completed plant cards become fogged over in the Information Center."
         },
         {
           "number": 3,
@@ -102,7 +102,7 @@
         {
           "number": 6,
           "title": "Finish your journey",
-          "body": "Find the frog after the challenges, enjoy a joke, and choose Play Again to start fresh. Use a mouse, touch, or Tab and Enter; arrow keys are not needed."
+          "body": "Find the frog after the challenges. Read the joke setup, click the arrow for the punchline, and choose Play Again to start fresh. Use a mouse, touch, or Tab and Enter; arrow keys are not needed."
         }
       ],
       "cta": {
@@ -412,7 +412,7 @@
       "backTarget": "home",
       "headerTitle": "Information Center",
       "heading": "Information Center",
-      "introText": "Meet Mr. Fly! Choose a plant, then click its picture to explore every photo and fact. Back to the Bog unlocks after the final discovery. Finish all five plants to unlock the challenge.",
+      "introText": "Meet Mr. Fly! Choose a plant, then click its picture to explore every photo and fact. Back to the Information Center unlocks after the final discovery. Finish all five plants to unlock the challenge.",
       "completionText": "All five plants explored! Follow the brown arrow to THE BOG.",
       "progressLabel": "Plants discovered:"
     },
@@ -420,19 +420,21 @@
       "type": "end",
       "backTarget": "scene",
       "headerTitle": "Great Job!",
-      "heading": "Congratulations!",
-      "body": [
-        "We survived our trip through a carnivorous plant bog. Thanks for playing!",
-        "What did the Venus Flytrap say to the waiter?",
-        "<strong>“I’ll have a cheeseburger with flies!”</strong>"
-      ],
       "buttons": [
         {
           "label": "Play Again",
           "target": "restart",
           "variant": "primary"
         }
-      ]
+      ],
+      "joke": {
+        "setup": "What did the Venus Flytrap say to the waiter?",
+        "punchline": "“I’ll have a cheeseburger with flies!”",
+        "frogImage": {
+          "src": "images/original/1-image8.png",
+          "alt": "A friendly green frog"
+        }
+      }
     }
   },
   "mascot": {

@@ -27,11 +27,11 @@ Use Droid Serif for headings, with Georgia as the approved computer fallback. Th
 
 ## Current learning flow
 
-Five plant lessons cover Bladderwort, Pitcher Plant, Sundew, Venus Flytrap, and Butterwort. Each lesson presents all discoveries, reading sections, and fun facts in a single-screen sequence. Clicking the large plant picture changes the photo and facts together, without scrolling through articles. Video links appear as their own discovery step. Only reaching the final discovery completes a lesson and unlocks both return-to-bog controls. After all five lessons are complete, an arrow unlocks the bog challenge.
+Five plant lessons cover Bladderwort, Pitcher Plant, Sundew, Venus Flytrap, and Butterwort. Each lesson presents all discoveries, reading sections, and fun facts in a single-screen sequence. Clicking the large plant picture changes the photo and facts together, without scrolling through articles. Video links appear as their own discovery step. Only reaching the final discovery completes a lesson and unlocks the “Back to the Information Center” return controls. After all five lessons are complete, an arrow unlocks the bog challenge.
 
-The challenge includes five plant-finding prompts, then four Butterwort identification rounds: Butterwort (Yes), Sundew (No), Ghost Plant (No), and Butterwort (Yes). Wrong answers offer retries. The frog leads to the joke and congratulations screen. Play Again resets progress and returns home. Progress is currently limited to the page session and resets on reload.
+The challenge includes five plant-finding prompts, then four Butterwort identification rounds: Butterwort (Yes), Sundew (No), Ghost Plant (No), and Butterwort (Yes). Wrong answers offer retries. The frog leads to an ending showing only a frog picture, the joke setup, and a brown arrow. Clicking the arrow reveals the punchline and a Play Again button, which resets progress and returns home. Progress is currently limited to the page session and resets on reload.
 
-Lesson and article photos open an image viewer with zoom and scrolling. Escape or Close dismisses it. Lesson photo clicks also reveal subsequent facts. The layout uses enlarged photos, compact colored fact panels, full-width article rows, and responsive controls.
+The Enlarge image button opens the lesson image viewer with zoom and scrolling; article photos also open the viewer. Escape or Close dismisses it. Lesson photo clicks only reveal subsequent photos and facts. The layout uses enlarged photos, compact colored fact panels, full-width article rows, and responsive controls.
 
 Original video links:
 
