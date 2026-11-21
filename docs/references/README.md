@@ -52,3 +52,5 @@ Previous Chromium checks passed for all lessons, game unlocking, quiz rounds and
 The main page uses the lighter brand brown `#935D3C` (PMS 464) for the header, footer, secondary buttons, and main text accents. The original logo artwork keeps its approved colors. Plant 05 in the bog field guide uses the user-supplied Butterwort photograph, saved at `public/images/butterwort-photo.png`, in place of the cartoon. Its existing link still opens the Butterwort lesson.
 
 The main-page “Carnivorous Plants” title uses the original dark brown `#572700`; the surrounding main-page accents retain the lighter brown `#935D3C`.
+
+All page header and footer bars use the lighter brand brown `#935D3C` (PMS 464), matching the home page. The main-page “Carnivorous Plants” title remains dark brown `#572700`.

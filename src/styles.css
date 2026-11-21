@@ -1220,7 +1220,7 @@ h1:focus, h2:focus { outline: none; }
   --font-secondary: Arial, sans-serif;
 }
 body { background: #DBD095; }
-.site-header, .site-header--dark, .site-footer { background: #572700; }
+.site-header, .site-header--dark, .site-footer { background: var(--brown-mid); }
 .header-inner { max-width: 1600px; }
 h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
 .btn { border: 2px solid #572700; border-radius: 14px; }
@@ -1332,9 +1332,7 @@ h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
 }
 .image-viewer .viewer-image img { max-height: none; height: auto; }
 
-/* Main menu uses the lighter PMS 464 brown from the brand palette. */
-.home-screen .site-header,
-.home-screen + .site-footer,
+/* Main menu accents use the lighter PMS 464 brown from the brand palette. */
 .home-screen .btn-secondary {
   background: var(--brown-mid);
 }
