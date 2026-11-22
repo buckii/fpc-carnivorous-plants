@@ -1544,3 +1544,7 @@ html, body, #root { height: 100%; min-height: 0; overflow: hidden; }
   .viewport-content .guided-lesson .lesson-photo { height: 100%; min-height: 50dvh; }
   .viewport-content .guided-lesson .lesson-caption { margin-right: 0; }
 }
+
+/* Give only the Butterwort identification rounds the entire viewport. */
+.viewport-content .challenge-screen--identify + .site-footer { display: none; }
+.viewport-content .challenge-screen--identify .identification { height: 100dvh; min-height: 100dvh; background-size: contain; }
