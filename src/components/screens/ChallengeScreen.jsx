@@ -1,12 +1,17 @@
 import { useState } from 'react'
 import SiteHeader from '../layout/SiteHeader.jsx'
+import { shuffle } from '../../utils/shuffle.js'
 
 export default function ChallengeScreen({ challenge, subjects, onNavigate }) {
+  const [questions] = useState(() => ({
+    prompts: shuffle(challenge.prompts),
+    rounds: shuffle(challenge.rounds),
+  }))
   const [stage, setStage] = useState('find')
   const [index, setIndex] = useState(0)
   const [feedback, setFeedback] = useState(null)
-  const prompt = challenge.prompts[index]
-  const round = challenge.rounds[index]
+  const prompt = questions.prompts[index]
+  const round = questions.rounds[index]
   function advance() {
     setFeedback(null)
     if (stage === 'find' && index === challenge.prompts.length - 1) {

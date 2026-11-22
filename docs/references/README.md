@@ -88,3 +88,5 @@ Information Center cover photos now fill their image areas consistently for all 
 THE BOG plant-finding activity now uses one forest background across the full browser area, with transparent habitat space and translucent cream fog behind the prompt, header, and footer. This avoids separate background crops and keeps words readable without hiding the forest.
 
 Only the “Is this a Butterwort?” identification rounds now omit the header and footer. Their photo area uses the entire viewport height while still containing the complete image without cropping. The question, answers, and feedback remain overlaid; other challenge stages retain their existing header and footer.
+
+Each new THE BOG playthrough shuffles the plant-finding prompts and Butterwort identification rounds independently. Every question remains paired with its original answer and appears once in its stage. The shuffled order stays fixed during feedback, retries, and advancement. Play Again resets progress; entering THE BOG in the next game creates a fresh shuffle. This supersedes earlier notes listing a fixed question sequence.
