@@ -17,7 +17,7 @@ export default function AnnotatedPlantImage({ image, annotation }) {
   }
   return <div className="annotated-plant-image">
     <img src={image.src} alt={image.alt} onLoad={e => setSize([e.currentTarget.naturalWidth, e.currentTarget.naturalHeight])} />
-    {size && annotation && <svg className="plant-part-arrow" viewBox={`0 0 ${size[0]} ${size[1]}`} preserveAspectRatio="xMidYMid meet" role="img" aria-label={label}>
+    {size && annotation && <svg className="plant-part-arrow" viewBox={`0 0 ${size[0]} ${size[1]}`} preserveAspectRatio="xMidYMid slice" role="img" aria-label={label}>
       <title>{label}</title>
       <path d={`${line} ${head}`} fill="none" stroke="#572700" strokeWidth={stroke * 1.8} strokeLinecap="round" strokeLinejoin="round" />
       <path d={`${line} ${head}`} fill="none" stroke="white" strokeWidth={stroke} strokeLinecap="round" strokeLinejoin="round" />

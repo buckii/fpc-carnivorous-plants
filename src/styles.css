@@ -1524,3 +1524,23 @@ html, body, #root { height: 100%; min-height: 0; overflow: hidden; }
 .image-viewer .viewer-image img { width: 100%; height: 100%; min-height: 0; max-height: 100%; object-fit: contain; user-select: none; }
 .image-viewer .viewer-toolbar p { max-height: none; overflow: visible; }
 .viewport-content .habitat-plant:hover { transform: none; }
+
+/* Fill the photo areas consistently across all five plant covers. */
+.viewport-content .article-box > img { display: block; object-fit: cover; width: 100%; }
+/* Each discovery photo fills its half of the activity, without a frame. */
+.viewport-content .guided-lesson .photo-lesson { gap: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); min-height: calc(100dvh - 145px); }
+.viewport-content .guided-lesson .lesson-photo { min-height: calc(100dvh - 145px); }
+.viewport-content .guided-lesson .lesson-photo .annotated-plant-image img { object-fit: cover; }
+.viewport-content .guided-lesson .lesson-caption { margin-right: 1rem; }
+/* The forest extends behind the whole bog activity and the fitted screen. */
+.viewport-frame:has(.challenge-screen--find) { background: url('/images/original/1-image4.jpg') center / cover no-repeat; }
+.viewport-content .challenge-screen--find { background: transparent; }
+.viewport-content .challenge-screen--find .habitat { background: transparent; }
+.viewport-content .challenge-screen--find .site-header,
+.viewport-content .challenge-screen--find + .site-footer { background: rgba(240, 233, 217, .86); backdrop-filter: blur(8px); }
+.viewport-content .screen.challenge-screen--find .challenge-prompt { background: rgba(240, 233, 217, .82); backdrop-filter: blur(10px); color: #572700; }
+@media (max-width: 700px) {
+  .viewport-content .guided-lesson .photo-lesson { grid-template-columns: 1fr; grid-template-rows: repeat(2, 1fr); min-height: 0; gap: .5rem; }
+  .viewport-content .guided-lesson .lesson-photo { height: 100%; min-height: 50dvh; }
+  .viewport-content .guided-lesson .lesson-caption { margin-right: 0; }
+}

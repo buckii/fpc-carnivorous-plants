@@ -15,7 +15,7 @@ export default function ChallengeScreen({ challenge, subjects, onNavigate }) {
       setStage('frog'); setIndex(0)
     } else setIndex(index + 1)
   }
-  return <div className="screen active challenge-screen">
+  return <div className={`screen active challenge-screen challenge-screen--${stage}`}>
     <SiteHeader title="THE BOG" backTarget="scene" onNavigate={onNavigate} />
     {stage === 'find' && <>
       <div className="challenge-prompt" aria-live="polite">
