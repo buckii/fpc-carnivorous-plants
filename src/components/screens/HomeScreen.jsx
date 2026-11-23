@@ -2,12 +2,12 @@ import SiteHeader from '../layout/SiteHeader.jsx'
 
 export default function HomeScreen({ screen, meta, onNavigate }) {
   return (
-    <div className="screen active">
-      <SiteHeader title={meta.headerTitle} onNavigate={onNavigate} />
+    <div className="screen active home-screen">
+      <SiteHeader title={meta.headerTitle} onNavigate={onNavigate} showBranding />
       <div className="hero">
         <div className="hero-overlay"></div>
         <div className="hero-content">
-          <h1>{screen.heading}</h1>
+          <img className="home-logo" src="images/slide-01-fpc-logo.png" alt="Franklin Park Conservatory & Botanical Gardens" /><p className="eyebrow">School Program · Classroom Extension</p><h1>{screen.heading}</h1>
           <p className="hero-tagline">{screen.tagline}</p>
           <div className="hero-buttons">
             {screen.buttons.map((btn) => (
@@ -20,6 +20,7 @@ export default function HomeScreen({ screen, meta, onNavigate }) {
               </button>
             ))}
           </div>
+          <p className="home-credit">Franklin Park Conservatory & Botanical Gardens</p>
         </div>
       </div>
     </div>

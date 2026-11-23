@@ -26,3 +26,11 @@ See [ARCHITECTURE.md](ARCHITECTURE.md) for the full schema reference and step-by
 ## Deployment
 
 Deploys to Netlify automatically from `main`. The `netlify.toml` publishes from `dist/` with security headers configured.
+
+### Carnivorous plants learning journey
+
+The field guide includes Bladderwort, Pitcher Plant, Sundew, Venus Flytrap, and Butterwort. Each lesson is a single-screen photo sequence containing every original discovery, reading section, fun fact, and video link. Clicking the large image changes both the photo and information. Reaching the final step marks that lesson complete and unlocks its Back to the Bog controls; opening a lesson alone does not count. Once all five are explored, the field guide reveals the arrow to the bog challenge.
+
+The challenge asks learners to select the plant matching each of five prompts, then presents four Butterwort identification photos with retry feedback. A frog leads to the final joke and congratulations screen. Play Again clears lesson progress and returns to the main menu. Progress is limited to the current page session and resets on reload. Videos open the original YouTube links in a separate tab.
+
+Original PowerPoint assets used by the activity are in `public/images/original/`. The original slide lesson facts, video links, challenge prompts, identification rounds, classroom resources, and K–8 standards are configured in `src/data/game.json`. `ChallengeScreen.jsx` renders the two challenge stages; `SceneScreen.jsx` renders the field guide. The bright central menu, rounded controls, and unfiltered bog photography follow the Blooms & Butterflies reference.

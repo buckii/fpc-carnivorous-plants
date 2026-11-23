@@ -1,0 +1,92 @@
+# Carnivorous Plants project references
+
+These files preserve the supplied source material and decisions for future website updates. They are stored with the source code, outside `public/`, so they are not included as downloadable assets in the published website.
+
+## Original files
+
+- [Copy of FPC Plants.docx](<Copy of FPC Plants.docx>): requested content, interactions, and slide-by-slide changes.
+- [Readable original instructions](original-instructions.md): text extracted from that document for easier searching.
+- [(1of4) Carnivorous Plants Extensions Activity.pptx](<(1of4) Carnivorous Plants Extensions Activity.pptx>): original introduction, teacher resources, bog, Bladderwort, and Pitcher Plant slides.
+- [(2of4) Carnivorous Plants Extensions Activity.pptx](<(2of4) Carnivorous Plants Extensions Activity.pptx>): first Butterwort identification questions.
+- [(3of4) Carnivorous Plants Extensions Activity (1).pptx](<(3of4) Carnivorous Plants Extensions Activity  (1).pptx>): Sundew, Venus Flytrap, Butterwort, and video slides.
+- [(4of4) Carnivorous Plants Extensions Activity (1).pptx](<(4of4) Carnivorous Plants Extensions Activity  (1).pptx>): remaining identification questions, joke, and completion slides.
+- [Brand-Standards.pdf](Brand-Standards.pdf): authoritative palette, typography, logo, and imagery guidance.
+- [Current-app whitespace example](image-997cecb2.png): the spacious Bladderwort panel identified for improvement.
+- [Butterwort lesson example](image-ce5b83e0.png): large plant image beside compact colored fact boxes.
+- [Identification activity example](image-c1395bb8.png): photo background with colored prompt and Yes/No controls.
+
+## User decisions and direction
+
+The layout reference supplied by the user was https://fpcblooms.mycsg.org. The initial direction was to keep articles, add an interactive bog and plant identification activities, and use original PowerPoint assets. The subsequent direction was to match the supplied brand standards, enlarge images to follow the screenshots, make images interactive, and reduce excessive whitespace. The brand PDF and screenshots take precedence over the earlier teal-centered styling.
+
+## Brand notes
+
+Primary colors from the PDF are dark brown `#572700`, orange `#F8971D`, yellow-green `#D5D10E`, and olive `#B8B308`. Supporting colors include brown `#935D3C`, light blue `#A1D2DD`, gray `#B8B1AB`, lime `#CFDD3A`, tan `#DBD095`, orange-red `#DA6126`, teal `#006682`, gold `#F99F1C`, green `#77833C`, khaki `#C0B88D`, sage `#80866E`, and red `#9C2F31`.
+
+Use Droid Serif for headings, with Georgia as the approved computer fallback. The body typeface is Trade Gothic LT Std, with Arial as its approved computer fallback. Preserve the original logo proportions, colors, and clear space; use the full-color logo on white. Favor natural, unfiltered plant photography.
+
+## Current learning flow
+
+Five plant lessons cover Bladderwort, Pitcher Plant, Sundew, Venus Flytrap, and Butterwort. Each lesson presents all discoveries, reading sections, and fun facts in a single-screen sequence. Clicking the large plant picture changes the photo and facts together, without scrolling through articles. Video links appear as their own discovery step. Only reaching the final discovery completes a lesson and unlocks the “Back to the Information Center” return controls. After all five lessons are complete, an arrow unlocks the bog challenge.
+
+The challenge includes five plant-finding prompts, then four Butterwort identification rounds: Butterwort (Yes), Sundew (No), Ghost Plant (No), and Butterwort (Yes). Wrong answers offer retries. The frog leads to an ending showing only a frog picture, the joke setup, and a brown arrow. Clicking the arrow reveals the punchline and a Play Again button, which resets progress and returns home. Progress is currently limited to the page session and resets on reload.
+
+The Enlarge image button opens the lesson image viewer with zoom and scrolling; article photos also open the viewer. Escape or Close dismisses it. Lesson photo clicks only reveal subsequent photos and facts. The layout uses enlarged photos, compact colored fact panels, full-width article rows, and responsive controls.
+
+Original video links:
+
+- Sundew: https://www.youtube.com/watch?v=ArBZzrV3xww
+- Venus Flytrap: https://www.youtube.com/watch?v=O7eQKSf0LmY
+
+The teacher resources include the detailed K–8 standards, books, video list, and craft projects from the slides.
+
+## Implementation locations and verification
+
+`src/data/game.json` contains lesson facts, source image references, video links, challenge prompts, identification rounds, and teacher resources. `src/components/screens/SubjectDetailScreen.jsx` renders the lessons; `ChallengeScreen.jsx` renders the games; `SceneScreen.jsx` renders the field guide. `src/components/subject/ImageViewer.jsx` implements the image viewer, and `SectionCard.jsx` provides interactive article images. Branding and responsive layouts are in `src/styles.css`; the heading font is loaded in `index.html`. Extracted source artwork used by the app is in `public/images/original/`.
+
+Previous Chromium checks passed for all lessons, game unlocking, quiz rounds and retries, replay reset, video URLs, standards, image availability, enlarged images, zoom, Escape/Close handling, and responsive layouts. These results describe the completed revisions; rerun relevant checks when changing behavior. Production builds are validated by the deployment system.
+
+
+## Latest main-page and Butterwort update
+
+The main page uses the lighter brand brown `#935D3C` (PMS 464) for the header, footer, secondary buttons, and main text accents. The original logo artwork keeps its approved colors. Plant 05 in the bog field guide uses the user-supplied Butterwort photograph, saved at `public/images/butterwort-photo.png`, in place of the cartoon. Its existing link still opens the Butterwort lesson.
+
+The main-page “Carnivorous Plants” title uses the original dark brown `#572700`; the surrounding main-page accents retain the lighter brown `#935D3C`.
+
+All page header and footer bars use the lighter brand brown `#935D3C` (PMS 464), matching the home page. The main-page “Carnivorous Plants” title remains dark brown `#572700`.
+
+The latest color preference supersedes the earlier all-page light brown bars: non-home-page headers, footers, and information panels use PMS 615 (`#DBD095`). Their header/footer text uses dark brown for readability. The home page retains its light brown bars and dark brown title. Photographic backgrounds and action-button colors remain intact.
+
+The photo lesson sequence is assembled by `src/components/subject/lessonSteps.js`, preserving all existing content while ensuring adjacent steps use different images. Current sequences contain 10 Bladderwort, 10 Pitcher Plant, 11 Sundew, 11 Venus Flytrap, and 7 Butterwort discoveries. Browser checks covered all 49 discoveries at desktop and two phone sizes, photo/fact changes, gated return controls, videos, zoom, and the final game unlock.
+
+The latest information-page background replaces PMS 615 with the exact cream sampled from [the supplied screenshot](information-background-color.png): `#F0E9D9` (RGB 240, 233, 217). This replaces the previous PMS 615 areas, including non-home-page headers and footers. The home page keeps its existing styling.
+
+The home-page header and footer now also use the screenshot cream `#F0E9D9`, with dark brown `#572700` text. This supersedes the earlier home-page exception for these bars; the other home-page elements retain their existing styling.
+
+The field-guide page is now titled “Information Center.” Completed plant cards are fogged over after the learner finishes the photo sequence and returns. Once all five cards are fogged, a large dark brown arrow opens the existing plant-finding game, now titled “THE BOG,” with the same grassy bog photograph used on the home page.
+
+The home-page Teacher’s Guide button uses brand teal `#006682`, distinct from the brown Tutorial button. Lesson-specific arrows point to plant parts discussed in each discovery, including the Butterwort leaves on discovery 1 of 7. The [supplied arrow example](plant-part-arrow-example.png) is saved here. Arrow positions and optional matching-photo overrides are in each subject’s `partAnnotations` in `src/data/game.json`, keyed by the discovery number (starting at 1). Coordinates use percentages of the source photograph. `AnnotatedPlantImage.jsx` aligns the outlined white SVG arrows with the uncropped photo on desktop and mobile. Arrows ignore pointer events so photo clicks continue advancing the lesson. A mislabeled Sundew detail image was replaced with a Sundew photograph.
+
+Clicking the lesson picture only advances discoveries; the final picture no longer opens the image viewer. Zoom opens exclusively through the Enlarge image button. Every navigation to the home page now clears completion progress, removes card fog, and locks THE BOG again, so Start Exploring begins a fresh game.
+
+The shared top header now follows the [supplied header reference](header-reference.png): the full-color Conservatory logo appears to the left of a brown divider, with “School Program Classroom Extension” in uppercase dark brown on the cream background. Page titles and existing back controls remain below the branding. The masthead adapts for mobile and is compact in plant lessons; the joke ending remains free of a header.
+
+The logo and “School Program Classroom Extension” masthead now appears only on the start page. All other pages retain simple title headers and their existing back controls. This supersedes the earlier shared-masthead direction.
+
+Plant discoveries now follow the [half-page picture reference](discovery-half-page-reference.png): equal photo and information columns on desktop, with equal-height stacked areas on phones. Discovery headings, facts, labels, and buttons are larger; controls have at least 48-pixel heights on phones and 52-pixel heights on desktop. Photos remain uncropped to preserve plant-part arrow alignment, and clicking a picture still advances the discovery. The information panel can scroll when larger text needs extra space on a small display. Browser checks covered all 49 discoveries at desktop and phone widths.
+
+Discovery photographs now use the full picture area without a border, colored frame, or bottom instruction strip. Removing the strip and its reserved space enlarges the visible image while preserving uncropped photos, aligned plant-part arrows, and picture clicks to advance discoveries. The Enlarge image button remains available for a close-up.
+
+The Teacher’s Guide presents Additional Resources, Tips & Tricks, and Prompts & Projects as three separate buttons with white backgrounds, distinct from the cream page and information panel. Each button retains its own destination and hover styling.
+
+All four “Is this a Butterwort?” identification photos fit entirely within the full-page activity area without cropping or repeating. Any space around a photo uses the screenshot cream background. The question and answer controls remain overlaid. The [identification fit example](butterwort-identification-fit-reference.png) is saved for reference.
+
+The latest layout requirement is that every screen fits in the browser window without vertical scrolling. Headers, including the start-page logo masthead, are smaller. The tutorial and teacher resources use Previous/Next page controls, preserving every tutorial step, resource row, learning-standard item, writing prompt, and project. A viewport-fitting layout adapts complete screens to the available height and width, including discoveries, the Information Center, the bog game, feedback, and the ending. Lesson panels no longer scroll internally. Photo close-ups fit in their dialog; zoomed pictures can be moved by dragging or arrow keys rather than scrolling. This supersedes earlier notes about scrollable lesson panels and photo viewers.
+
+Information Center cover photos now fill their image areas consistently for all five plants, replacing the contained-image blank space. Discovery photos fill half the learning layout edge to edge, side by side on desktop and in equal stacked areas on phones. These previews use cover cropping; plant-part arrow overlays use the same scaling and alignment. Enlarge image still shows the complete photo. This supersedes the earlier uncropped discovery-preview preference while identification rounds continue showing their full images.
+
+THE BOG plant-finding activity now uses one forest background across the full browser area, with transparent habitat space and translucent cream fog behind the prompt, header, and footer. This avoids separate background crops and keeps words readable without hiding the forest.
+
+Only the “Is this a Butterwort?” identification rounds now omit the header and footer. Their photo area uses the entire viewport height while still containing the complete image without cropping. The question, answers, and feedback remain overlaid; other challenge stages retain their existing header and footer.
+
+Each new THE BOG playthrough shuffles the plant-finding prompts and Butterwort identification rounds independently. Every question remains paired with its original answer and appears once in its stage. The shuffled order stays fixed during feedback, retries, and advancement. Play Again resets progress; entering THE BOG in the next game creates a fresh shuffle. This supersedes earlier notes listing a fixed question sequence.

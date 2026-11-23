@@ -15,7 +15,7 @@
   --light-blue: #A1D2DD;
   --gray: #B8B1AB;
   --brown-mid: #935D3C;
-  --tan: #DBD095;
+  --tan: #F0E9D9;
   --orange-deep: #DA6126;
   --yellow-green-light: #CFDD3A;
   --gold: #F99F1C;
@@ -339,7 +339,7 @@ strong { font-weight: 700; }
 }
 
 .guide-card {
-  background: var(--bg-cream);
+  background: #FFFFFF;
   border: 2px solid var(--tan);
   border-radius: 10px;
   padding: var(--space-md);
@@ -1079,3 +1079,472 @@ strong { font-weight: 700; }
 .screen {
   padding-bottom: 50px;
 }
+
+/* Bright classroom layout, shared with Blooms & Butterflies. */
+:root {
+  --brown-dark: #006682;
+  --brown-mid: #006682;
+  --forest-green: #526322;
+  --text-primary: #173b43;
+  --text-body: #243e44;
+  --bg-cream: #eff8fa;
+  --tan: #a1d2dd;
+  --font-secondary: 'Trebuchet MS', sans-serif;
+}
+body { background: #eff8fa; }
+.site-header, .site-header--dark { background: #006682; box-shadow: none; }
+.site-footer { position: static; background: #006682; color: white; }
+.screen { padding-bottom: 0; min-height: calc(100vh - 55px); }
+.hero { background: url('/images/original/1-image4.jpg') center / cover; min-height: calc(100vh - 115px); padding: 3rem 1rem; }
+.hero::before, .hero-overlay { display: none; }
+.hero-content { background: rgba(255,255,255,.94); border-radius: 24px; max-width: 560px; padding: 2.5rem; box-shadow: 0 12px 40px #173b4333; }
+.hero-content h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); color: #006682; text-shadow: none; letter-spacing: -.04em; }
+.hero-tagline { color: #243e44; opacity: 1; font-size: 1.1rem; }
+.home-logo { width: 160px; height: 95px; object-fit: contain; margin-bottom: 1rem; }
+.hero-buttons { flex-direction: column; max-width: 300px; margin: auto; }
+.home-credit { font-size: .8rem; margin: 1.7rem 0 0; }
+.btn { border-radius: 50px; min-height: 46px; }
+.btn-primary { background: #f8971d; color: #442500; }
+.btn-primary:hover { background: #ffb54e; }
+.btn-secondary { background: #006682; color: white; }
+.btn-secondary:hover { background: #004e63; }
+.btn:disabled { opacity: .45; cursor: default; transform: none; box-shadow: none; }
+button:focus-visible, a:focus-visible { outline: 4px solid #f8971d; outline-offset: 5px; }
+.eyebrow { font-family: var(--font-secondary); font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; font-weight: bold; color: #006682; }
+.field-guide { background: linear-gradient(150deg, #e6f6f8, #fff7df); }
+.field-guide-inner { max-width: 1120px; padding: 3rem 1.5rem; margin: auto; }
+.field-guide-intro { display: flex; align-items: center; gap: 2rem; max-width: 850px; margin: 0 auto 2.5rem; }
+.field-guide-intro img { width: 100px; max-height: 130px; object-fit: contain; }
+.field-guide-intro h1 { margin-bottom: .75rem; }
+.article-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1.2rem; }
+.article-box { grid-column: span 2; text-align: left; background: white; border: 2px solid transparent; border-radius: 20px; overflow: hidden; cursor: pointer; color: #243e44; transition: transform .2s, border-color .2s; box-shadow: 0 4px 16px #0066820c; }
+.article-box:nth-child(4), .article-box:nth-child(5) { grid-column: span 3; display: grid; grid-template-columns: 40% 1fr; align-items: center; }
+.article-box > img { width: 100%; height: 180px; object-fit: contain; background: #edf4ed; }
+.article-box > div { padding: 1.4rem; }
+.article-box h2 { font-size: 1.45rem; margin: .5rem 0; }
+.article-box p { font-size: .9rem; }
+.article-box span:last-child { font-family: var(--font-secondary); font-weight: bold; }
+.article-box:hover { transform: translateY(-5px); border-color: #f8971d; }
+.article-box.complete { border-color: #77833c; }
+.guide-progress { text-align: center; margin: 2rem 0 0; }
+.guide-progress p { margin: .5rem 0; }
+.plant-content { max-width: 1040px; padding: 2.5rem 1.5rem; }
+.plant-content > h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: 1.5rem; }
+.photo-lesson { display: grid; grid-template-columns: 1.15fr 1fr; background: white; border-radius: 22px; overflow: hidden; margin-bottom: 2rem; }
+.lesson-photo { border: 0; position: relative; background: #e7f0eb; cursor: zoom-in; overflow: hidden; min-height: 350px; }
+.lesson-photo img { width: 100%; height: 350px; object-fit: contain; transition: transform .25s; }
+.lesson-photo img.zoomed { transform: scale(1.6); }
+.lesson-photo span { position: absolute; bottom: 0; left: 0; right: 0; padding: .7rem; background: #006682; color: white; font-family: var(--font-secondary); }
+.lesson-caption { padding: 2rem; align-self: center; }
+.lesson-caption h2 { font-size: 1.45rem; line-height: 1.5; }
+.answer-buttons { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+.video-section { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; background: #a1d2dd; padding: 2rem; border-radius: 22px; margin-bottom: 2rem; }
+.video-tv { position: relative; display: block; border: 12px solid #243e44; border-radius: 18px; overflow: hidden; background: #243e44; }
+.video-tv img { width: 100%; height: 200px; object-fit: cover; display: block; }
+.video-tv span { display: block; text-align: center; padding: .6rem; color: white; font-family: var(--font-secondary); font-weight: bold; }
+.section-heading { display: flex; gap: 1rem; align-items: center; justify-content: space-between; margin: 2rem 0 1rem; }
+.section-heading h2 { margin: 0; }
+.fact-card { border-left-color: #006682; }
+.fact-card h3 { color: #006682; }
+.fact-card img { max-height: 340px; object-fit: contain; }
+.challenge-screen { background: #e3f2f5; }
+.challenge-prompt { text-align: center; padding: 1.5rem; background: #fffaf0; min-height: 190px; }
+.challenge-prompt h1 { font-size: clamp(1.3rem, 3vw, 1.9rem); max-width: 850px; margin: 0 auto 1rem; }
+.habitat { position: relative; height: min(64vw, 620px); min-height: 440px; background: url('/images/original/1-image4.jpg') center / cover; }
+.habitat-plant { position: absolute; background: transparent; border: 0; cursor: pointer; width: 20%; padding: .4rem; transition: transform .2s; }
+.habitat-plant img { display: block; width: 100%; height: clamp(120px, 20vw, 230px); object-fit: contain; filter: drop-shadow(0 4px 3px #132c22); }
+.habitat-plant span { display: inline-block; color: #173b43; background: #fffffff2; font: bold .85rem var(--font-secondary); padding: .35rem .65rem; border-radius: 20px; }
+.habitat-plant:hover { transform: scale(1.06); }
+.habitat-plant--0 { left: 3%; bottom: 10%; }
+.habitat-plant--1 { left: 22%; bottom: 33%; }
+.habitat-plant--2 { left: 42%; bottom: 5%; }
+.habitat-plant--3 { left: 61%; bottom: 25%; }
+.habitat-plant--4 { left: 79%; bottom: 2%; }
+.habitat-plant:disabled { cursor: default; }
+.identification { min-height: calc(100vh - 110px); background-color: #F0E9D9; background-size: contain; background-position: center; background-repeat: no-repeat; display: flex; align-items: flex-end; justify-content: center; padding: 3rem 1.5rem; }
+.identification-card { background: #fffffff5; text-align: center; border-radius: 24px; padding: 2rem; max-width: 600px; width: 100%; box-shadow: 0 8px 40px #173b4344; }
+.identification-card h1 { font-size: 2rem; margin-bottom: 1rem; }
+.identification-card .answer-buttons { justify-content: space-between; }
+.correct-badge { display: inline-block; background: #d5d10e; padding: .5rem 1.2rem; border-radius: 30px; transform: rotate(-5deg); margin-bottom: 1rem; font: bold 1.2rem var(--font-secondary); }
+.frog-finish { padding: 3rem 1rem; background: url('/images/original/1-image4.jpg') center / cover; min-height: calc(100vh - 110px); }
+.frog-finish .content-card { text-align: center; max-width: 560px; }
+.frog-finish-button { border: 0; background: transparent; padding: 1rem; cursor: pointer; }
+.frog-finish-button img { width: 200px; }
+.end-card { margin-top: 4rem; max-width: 680px; }
+.end-card h2 { font-size: 2.5rem; }
+.content-card { box-shadow: 0 5px 24px #00668210; }
+@media (max-width: 700px) {
+  .hero-content { padding: 2rem 1.5rem; }
+  .field-guide-inner { padding: 2rem 1rem; }
+  .field-guide-intro { gap: 1rem; }
+  .field-guide-intro img { width: 65px; }
+  .article-grid { grid-template-columns: 1fr 1fr; }
+  .article-box, .article-box:nth-child(4), .article-box:nth-child(5) { grid-column: auto; display: block; }
+  .article-box:last-child { grid-column: 1 / -1; display: grid; grid-template-columns: 40% 1fr; }
+  .article-box > div { padding: 1rem; }
+  .article-box h2 { font-size: 1.15rem; }
+  .article-box > img { height: 140px; }
+  .photo-lesson, .video-section { grid-template-columns: 1fr; }
+  .lesson-caption, .video-section { padding: 1.5rem; }
+  .lesson-photo { min-height: 280px; }
+  .lesson-photo img { height: 280px; }
+  .section-heading { align-items: flex-start; flex-direction: column; }
+  .habitat { min-height: 620px; }
+  .habitat-plant { width: 34%; }
+  .habitat-plant img { height: 140px; }
+  .habitat-plant--0 { left: 0; bottom: 59%; }
+  .habitat-plant--1 { left: 36%; bottom: 62%; }
+  .habitat-plant--2 { left: 7%; bottom: 27%; }
+  .habitat-plant--3 { left: 62%; bottom: 30%; }
+  .habitat-plant--4 { left: 30%; bottom: 0; }
+  .identification { padding: 13rem 1rem 1.5rem; }
+  .identification-card { padding: 1.5rem; }
+  .end-buttons { flex-wrap: wrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+.home-logo { width: min(100%, 310px); height: auto; margin-bottom: 1.5rem; }
+h1:focus, h2:focus { outline: none; }
+
+/* FPC brand standards: primary PMS 4625, 397, 144; supporting PMS 615, 3145. */
+:root {
+  --brown-dark: #572700;
+  --brown-mid: #935D3C;
+  --forest-green: #77833C;
+  --text-primary: #572700;
+  --text-body: #572700;
+  --bg-cream: #F0E9D9;
+  --tan: #F0E9D9;
+  --font-primary: 'Droid Serif', Georgia, serif;
+  --font-secondary: Arial, sans-serif;
+}
+body { background: #F0E9D9; }
+.site-header, .site-header--dark, .site-footer { background: var(--brown-mid); }
+.header-inner { max-width: 1600px; }
+h1, h2, h3, .hero-content h1, .eyebrow, .fact-card h3 { color: #572700; }
+.btn { border: 2px solid #572700; border-radius: 14px; }
+.btn-primary { background: #F8971D; color: #572700; }
+.btn-primary:hover { background: #F99F1C; }
+.btn-secondary { background: #572700; color: white; }
+.btn-secondary:hover { background: #935D3C; }
+.btn-accent { background: #D5D10E; color: #572700; }
+.btn-accent:hover { background: #CFDD3A; }
+.hero-content { background: white; }
+.home-logo { padding: 1rem 0; }
+.hero-tagline, .article-box, .habitat-plant span { color: #572700; }
+.field-guide { background: #F0E9D9; }
+.field-guide-inner { max-width: 1500px; padding: 1.5rem; }
+.field-guide-intro { max-width: 1100px; margin-bottom: 1.5rem; }
+.article-box { border-color: #935D3C; }
+.article-box > img { height: 260px; background: #F0E9D9; object-fit: cover; }
+.article-box:nth-child(4) > img, .article-box:nth-child(5) > img { height: 100%; min-height: 230px; }
+.article-box > div { padding: 1rem; }
+.article-box.complete { border-color: #77833C; }
+.plant-screen { background: #F0E9D9; }
+.plant-content { max-width: 1600px; padding: 1.25rem clamp(1rem, 3vw, 3rem) 2rem; }
+.plant-content > .eyebrow { margin-bottom: .4rem; }
+.plant-content > h1 { font-size: clamp(1.8rem, 3.3vw, 3rem); margin-bottom: 1rem; }
+.photo-lesson { grid-template-columns: minmax(280px, 34%) minmax(0, 1fr); background: transparent; gap: 1.5rem; border-radius: 0; overflow: visible; align-items: stretch; }
+.lesson-photo { grid-column: 2; grid-row: 1; width: 100%; height: clamp(420px, 68vh, 760px); min-height: 0; background: #C0B88D; border: 3px solid #572700; border-radius: 16px; }
+.lesson-photo img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.lesson-photo span { background: #572700; color: white; padding: .65rem; }
+.lesson-caption { grid-column: 1; grid-row: 1; padding: 1.25rem; background: #D5D10E; border: 3px solid #572700; border-radius: 20px; align-self: start; }
+.lesson-caption h2 { font-family: var(--font-secondary); font-size: clamp(1.05rem, 1.5vw, 1.35rem); font-weight: normal; line-height: 1.55; }
+.lesson-guide { width: 60px; height: 65px; object-fit: contain; float: left; margin: 0 .8rem .5rem 0; }
+.lesson-caption .eyebrow { font-size: .7rem; }
+.lesson-caption .answer-buttons { margin-top: 1rem; }
+.lesson-caption .btn { padding: .65rem 1rem; }
+.video-section { grid-template-columns: 32% minmax(0, 1fr); background: #A1D2DD; padding: 1.5rem; gap: 1.5rem; }
+.video-tv { border-color: #572700; background: #572700; }
+.video-tv img { height: clamp(260px, 38vw, 500px); object-fit: contain; }
+.plant-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.fact-card { border: 2px solid #935D3C; background: #fff; padding: 1rem; }
+.fact-image-button { width: 100%; display: block; background: #C0B88D; border: 0; border-radius: 12px; overflow: hidden; margin-top: 1rem; cursor: zoom-in; }
+.fact-image-button img { display: block; width: 100%; height: clamp(250px, 32vw, 480px); max-height: none; object-fit: contain; }
+.fact-image-button span { display: block; background: #572700; color: white; padding: .65rem; font: bold 1rem var(--font-secondary); }
+.fact-image-button:hover img { opacity: .9; }
+.challenge-screen, .challenge-prompt { background: #F0E9D9; }
+.challenge-prompt { min-height: 0; padding: 1rem; }
+.habitat { height: calc(100vh - 230px); min-height: 520px; }
+.habitat-plant img { height: clamp(160px, 26vh, 300px); }
+.identification { min-height: calc(100vh - 110px); padding: 2rem 1rem; }
+.identification-card { position: relative; background: #D5D10E; border: 4px solid #572700; border-radius: 22px; padding: 1rem 1.25rem; max-width: 410px; box-shadow: none; }
+.identification-card h1 { font: bold clamp(1.2rem, 2vw, 1.65rem) var(--font-secondary); margin-bottom: .5rem; }
+.identification-card p { margin-bottom: .5rem; }
+.identification-card .answer-buttons { position: absolute; left: -65%; right: -65%; bottom: 0; margin: 0; pointer-events: none; }
+.identification-card .answer-buttons button { pointer-events: auto; min-width: 150px; min-height: 64px; font-size: 1.3rem; text-transform: uppercase; }
+.identification-card .answer-buttons .btn-primary { background: #D5D10E; }
+.identification-card .answer-buttons .btn-secondary { background: #F8971D; color: #572700; }
+.correct-badge { background: #CFDD3A; color: #572700; border: 2px solid #572700; }
+.image-viewer { position: fixed; inset: 0; width: min(96vw, 1600px); max-width: 96vw; height: 94dvh; max-height: 94dvh; margin: auto; border: 3px solid #572700; border-radius: 18px; padding: 0; background: #F0E9D9; color: #572700; }
+.image-viewer::backdrop { background: rgba(87,39,0,.8); }
+.image-viewer[open] { display: flex; flex-direction: column; }
+.viewer-toolbar { display: flex; align-items: center; gap: 1rem; padding: .75rem 1rem; border-bottom: 2px solid #572700; }
+.viewer-toolbar p { flex: 1; margin: 0; font-size: .9rem; max-height: 3em; overflow-y: auto; }
+.viewer-toolbar label { display: flex; align-items: center; gap: .5rem; font-family: var(--font-secondary); }
+.viewer-toolbar input { accent-color: #572700; width: 110px; }
+.viewer-image { flex: 1; min-height: 0; overflow: auto; background: #C0B88D; }
+.viewer-image img { display: block; min-height: 100%; object-fit: contain; }
+.viewer-hint { margin: 0; padding: .45rem; text-align: center; font-size: .8rem; }
+@media (max-width: 1000px) {
+  .photo-lesson { grid-template-columns: minmax(240px, 36%) minmax(0, 1fr); gap: 1rem; }
+  .identification-card .answer-buttons { left: -43%; right: -43%; }
+  .identification-card .answer-buttons button { min-width: 110px; }
+}
+@media (max-width: 700px) {
+  .field-guide-inner { padding: 1rem; }
+  .article-box > img { height: 190px; }
+  .article-box:nth-child(4) > img { height: 190px; min-height: 0; }
+  .article-box:nth-child(5) > img { min-height: 180px; }
+  .photo-lesson { display: flex; flex-direction: column; gap: .75rem; }
+  .lesson-photo { height: 52vh; min-height: 300px; }
+  .lesson-caption { padding: 1rem; width: 100%; }
+  .lesson-caption h2 { font-size: 1.05rem; }
+  .lesson-guide { height: 45px; width: 45px; }
+  .photo-lesson .lesson-photo { order: 0; }
+  .photo-lesson .lesson-caption { order: 1; }
+  .video-section, .plant-facts { grid-template-columns: 1fr; }
+  .video-tv img { height: 280px; }
+  .identification { padding: 14rem 1rem 1rem; }
+  .identification-card { max-width: 440px; }
+  .identification-card .answer-buttons { position: static; margin-top: 1rem; }
+  .identification-card .answer-buttons button { min-height: 48px; min-width: 100px; }
+  .viewer-toolbar { flex-wrap: wrap; gap: .5rem; }
+  .viewer-toolbar p { flex-basis: 100%; }
+  .viewer-toolbar label { flex: 1; }
+  .viewer-toolbar .btn { padding: .5rem 1rem; }
+  .habitat { height: 650px; }
+  .habitat-plant img { height: 140px; }
+}
+/* Let each article use the full row, including lessons with a single visible article. */
+.plant-facts { display: block; }
+.fact-card { margin-bottom: 1rem; }
+.fact-card:has(.fact-image-button) { display: grid; grid-template-columns: minmax(240px, 32%) minmax(0, 1fr); gap: .75rem 1.5rem; align-content: start; }
+.fact-card:has(.fact-image-button) > h3 { grid-column: 1; grid-row: 1; }
+.fact-card:has(.fact-image-button) > p { grid-column: 1; grid-row: 2; align-self: start; }
+.fact-card > .fact-image-button { grid-column: 2; grid-row: 1 / span 3; margin-top: 0; }
+.fact-card.hidden-fact:not(.revealed) { display: none; }
+@media (max-width: 700px) {
+  .fact-card:has(.fact-image-button) { display: block; }
+  .fact-card > .fact-image-button { margin-top: 1rem; }
+  .fact-card.hidden-fact:not(.revealed) { display: none; }
+}
+.image-viewer .viewer-image img { max-height: none; height: auto; }
+
+/* Main menu accents use the lighter PMS 464 brown from the brand palette. */
+.home-screen .btn-secondary {
+  background: var(--brown-mid);
+}
+.home-screen .btn-secondary:hover { background: var(--brown-dark); }
+.home-screen .hero-content h1 { color: var(--brown-dark); }
+.home-screen .eyebrow,
+.home-screen .hero-tagline,
+.home-screen .home-credit {
+  color: var(--brown-mid);
+}
+.home-screen .btn { border-color: var(--brown-mid); }
+
+/* Screenshot-matched cream header and footer bars on every page. */
+.screen .site-header,
+.screen + .site-footer {
+  background: #F0E9D9;
+  color: #572700;
+}
+.screen:not(.home-screen) .back-btn {
+  background: #572700;
+  color: white;
+}
+.screen:not(.home-screen) .back-btn:hover { background: #935D3C; }
+.screen:not(.home-screen) :is(
+  .content-card, .fact-card, .lesson-caption, .video-section,
+  .article-box, .tutorial-step, .standard-card,
+  .prompt-card, .challenge-prompt, .identification-card,
+  .resource-row:not(.resource-header)
+) {
+  background: #F0E9D9;
+}
+
+/* A plant lesson is one viewport-sized activity, advanced through its photo. */
+.lesson-shell { height: 100dvh; display: flex; flex-direction: column; overflow: hidden; }
+.lesson-shell .guided-lesson { flex: 1; min-height: 0; display: flex; flex-direction: column; animation: none; }
+.lesson-shell .site-header { position: static; flex-shrink: 0; padding-block: .7rem; }
+.lesson-shell .site-footer { flex-shrink: 0; padding: .5rem 1rem; }
+.lesson-shell .site-footer p { margin: 0; font-size: .75rem; }
+.guided-lesson .plant-content { flex: 1; min-height: 0; width: 100%; display: flex; flex-direction: column; padding: .6rem 1.25rem 1rem; }
+.lesson-title { display: flex; align-items: baseline; gap: 1rem; margin-bottom: .6rem; }
+.lesson-title h1 { font-size: clamp(1.4rem, 2.5vw, 2.2rem); }
+.lesson-title p { margin: 0; font-size: .9rem; }
+.guided-lesson .photo-lesson { flex: 1; min-height: 0; margin: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
+.guided-lesson .lesson-photo { height: 100%; min-height: 0; cursor: pointer; border: 0; border-radius: 0; padding: 0; background: transparent; }
+.guided-lesson .lesson-photo img { height: 100%; padding: 0; }
+.guided-lesson .lesson-caption { align-self: stretch; display: flex; flex-direction: column; min-height: 0; overflow-y: auto; padding: clamp(1rem, 2vw, 1.75rem); }
+.guided-lesson .lesson-caption h2 { font-family: var(--font-primary); font-size: clamp(1.5rem, 2.2vw, 2rem); line-height: 1.3; }
+.discovery-fact { font-size: clamp(1.15rem, 1.7vw, 1.5rem); line-height: 1.5; }
+.lesson-controls { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: auto; padding-top: .6rem; }
+.guided-lesson .lesson-caption .btn { padding: .8rem 1.1rem; font-size: 1.125rem; min-height: 52px; }
+.guided-lesson .lesson-caption .eyebrow { font-size: 1rem; }
+.lesson-instruction, .lesson-lock { font-size: 1rem; line-height: 1.4; margin: .7rem 0 0; }
+.lesson-lock { font-weight: bold; }
+.lesson-return { margin-top: .7rem; }
+.lesson-video span { font-size: .9rem; }
+@media (max-width: 700px) {
+  .guided-lesson .plant-content { padding: .4rem .65rem .65rem; }
+  .lesson-title { gap: .6rem; margin-bottom: .4rem; }
+  .lesson-title h1 { font-size: 1.3rem; }
+  .lesson-title p { font-size: .7rem; }
+  .guided-lesson .photo-lesson { display: grid; grid-template-columns: 1fr; grid-template-rows: minmax(0, 1fr) minmax(0, 1fr); gap: .45rem; }
+  .guided-lesson .lesson-photo { grid-column: 1; grid-row: 1; min-height: 0; border-radius: 0; }
+  .guided-lesson .lesson-caption { grid-column: 1; grid-row: 2; padding: .65rem .8rem; border-radius: 12px; }
+  .guided-lesson .lesson-caption h2 { font-size: 1.25rem; margin-bottom: .5rem; }
+  .guided-lesson .eyebrow { margin-bottom: .35rem; }
+  .discovery-fact { font-size: 1rem; line-height: 1.45; margin-bottom: .3rem; }
+  .lesson-controls { padding-top: .5rem; flex-wrap: wrap; }
+  .guided-lesson .lesson-caption .btn { font-size: 1rem; padding: .65rem .8rem; min-height: 48px; }
+  .lesson-instruction { display: none; }
+  .lesson-lock { font-size: .9rem; margin-top: .5rem; }
+  .lesson-return { margin-top: .4rem; }
+  .lesson-shell .site-footer p { font-size: .6rem; }
+}
+@media (max-height: 550px) and (min-width: 701px) {
+  .guided-lesson .lesson-caption { padding: .65rem; }
+  .discovery-fact { font-size: 1.05rem; line-height: 1.4; }
+  .guided-lesson .lesson-caption h2 { font-size: 1.35rem; }
+  .lesson-instruction { display: none; }
+}
+
+/* Completed information cards fade behind a visible layer of fog. */
+.article-box.complete { position: relative; }
+.article-box.complete > img { filter: grayscale(.6) blur(2px); opacity: .5; }
+.article-box.complete::after { content: ''; position: absolute; inset: 0; background: rgba(240,233,217,.35); pointer-events: none; border-radius: inherit; }
+.article-box.complete:focus-visible { outline: 4px solid #572700; outline-offset: 4px; }
+.bog-entry-arrow { display: inline-flex; flex-direction: column; align-items: center; gap: .3rem; border: 0; background: transparent; color: #572700; cursor: pointer; padding: .5rem 1.5rem; font: bold 1.2rem var(--font-secondary); }
+.bog-entry-arrow svg { width: clamp(160px, 24vw, 240px); height: auto; fill: currentColor; transition: transform .2s; }
+.bog-entry-arrow:hover svg { transform: translateX(8px); }
+.challenge-screen { background: url('/images/original/1-image4.jpg') center / cover no-repeat; }
+.challenge-prompt .bog-page-title { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: .5rem; }
+.challenge-prompt h2 { font-size: clamp(1.1rem, 2.5vw, 1.6rem); margin: 0 auto .75rem; max-width: 850px; }
+/* The guide has a distinct, approved teal action color. */
+.home-screen .btn-guide { background: #006682; color: white; border-color: #006682; }
+.home-screen .btn-guide:hover { background: #572700; border-color: #572700; }
+.guided-lesson .lesson-photo .annotated-plant-image { position: absolute; inset: 0; }
+.guided-lesson .lesson-photo .annotated-plant-image img { display: block; width: 100%; height: 100%; padding: 0; object-fit: contain; }
+.plant-part-arrow { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.guided-lesson .lesson-photo[aria-disabled="true"] { cursor: default; }
+/* Reveal the closing joke in two uncluttered steps. */
+.screen.active.end-screen { min-height: 100dvh; display: flex; align-items: center; justify-content: center; padding: 2rem 1.25rem; background: #F0E9D9; }
+.joke-ending { max-width: 800px; width: 100%; text-align: center; }
+.joke-frog { display: block; width: clamp(160px, 28vw, 300px); max-height: 38dvh; object-fit: contain; margin: 0 auto 2rem; }
+.joke-ending h1 { font-size: clamp(1.5rem, 4vw, 2.6rem); line-height: 1.4; margin-bottom: 1.5rem; }
+.joke-arrow { margin: 0 auto; }
+.guided-lesson .lesson-return { white-space: normal; }
+
+/* Logo and classroom-extension masthead, following the supplied reference. */
+.site-header .header-inner { flex-direction: column; align-items: stretch; gap: .65rem; }
+.header-branding { display: flex; align-items: center; gap: clamp(1.25rem, 4.8vw, 3.75rem); }
+.header-logo { width: clamp(220px, 32vw, 385px); height: auto; flex-shrink: 0; }
+.header-program { margin: 0; padding: 1.75rem 0 1.75rem clamp(1.25rem, 4.8vw, 3.75rem); border-left: 1px solid #572700; color: #572700; font-family: var(--font-secondary); font-size: clamp(1rem, 1.9vw, 1.5rem); font-weight: 700; line-height: 1.3; text-transform: uppercase; }
+.header-page { display: flex; align-items: center; gap: .75rem; }
+.lesson-shell .header-logo { width: clamp(150px, 21vw, 250px); }
+.lesson-shell .header-program { padding-block: .5rem; font-size: clamp(.75rem, 1.4vw, 1rem); }
+@media (max-width: 600px) {
+  .header-branding { gap: .85rem; }
+  .header-logo { width: 43%; }
+  .header-program { padding: .4rem 0 .4rem .85rem; font-size: clamp(.7rem, 2.8vw, 1rem); }
+  .lesson-shell .header-logo { width: 38%; }
+  .lesson-shell .header-program { font-size: .7rem; }
+}
+
+/* Keep each complete activity in view; long reading uses page controls. */
+html, body, #root { height: 100%; min-height: 0; overflow: hidden; }
+.viewport-frame { width: 100%; height: 100dvh; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #F0E9D9; }
+.viewport-position { width: 100%; flex-shrink: 0; position: relative; }
+.viewport-content { width: 100%; transform-origin: top center; }
+.viewport-content .screen { min-height: 0; animation: none; }
+.viewport-content .site-header { position: static; padding: .4rem 1rem; }
+.viewport-content .header-logo { width: clamp(130px, 22vw, 235px); }
+.viewport-content .header-branding { gap: 1.5rem; }
+.viewport-content .header-program { padding: .6rem 0 .6rem 1.5rem; font-size: clamp(.7rem, 1.4vw, 1.1rem); }
+.viewport-content .header-title { font-size: 1rem; }
+.viewport-content .site-footer { position: static; padding: .4rem 1rem; }
+.viewport-content .site-footer p { margin: 0; font-size: .7rem; }
+.viewport-content .content-card { margin: 1rem auto; padding: 1.25rem; }
+.page-controls { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1.25rem; font-family: var(--font-secondary); }
+.page-controls span { white-space: nowrap; }
+.paged-content > .btn { display: block; margin: 1rem auto 0; }
+.viewport-content .hero { min-height: 0; padding: 1rem; }
+.viewport-content .hero-content { padding: 1.25rem 2rem; }
+.viewport-content .home-logo { width: 180px; padding: 0; margin-bottom: .5rem; }
+.viewport-content .hero-content h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: .6rem; }
+.viewport-content .hero-tagline { margin-bottom: .75rem; }
+.viewport-content .home-credit { margin-top: .75rem; }
+.viewport-content .hero-buttons { gap: .6rem; }
+.viewport-content .lesson-shell { height: auto; overflow: visible; }
+.viewport-content .guided-lesson .plant-content { flex: none; }
+.viewport-content .guided-lesson .photo-lesson { flex: none; min-height: 65dvh; }
+.viewport-content .guided-lesson .lesson-photo { height: auto; min-height: 65dvh; }
+.viewport-content .guided-lesson .lesson-caption { overflow: visible; }
+.viewport-content .field-guide-inner { padding: 1rem; }
+.viewport-content .field-guide-intro { margin-bottom: .75rem; }
+.viewport-content .article-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .75rem; }
+.viewport-content .article-box, .viewport-content .article-box:nth-child(4), .viewport-content .article-box:nth-child(5) { grid-column: auto; display: block; }
+.viewport-content .article-box > img { height: clamp(110px, 22dvh, 220px); }
+.viewport-content .article-box > div { padding: .75rem; }
+.viewport-content .article-box h2 { font-size: 1.15rem; }
+.viewport-content .guide-progress { margin: .75rem 0 0; }
+.viewport-content .guide-progress p { margin: .25rem 0; }
+.viewport-content .bog-entry-arrow svg { width: 140px; }
+.viewport-content .identification { min-height: 70dvh; padding: 1rem; }
+.viewport-content .habitat { min-height: 400px; height: 55dvh; }
+.viewport-content .frog-finish { min-height: 0; padding: 1rem; }
+.viewport-content .end-screen { min-height: 0; padding: 2rem 1rem; }
+@media (max-width: 700px) {
+  .viewport-content .header-branding { gap: .75rem; }
+  .viewport-content .header-logo { width: 40%; }
+  .viewport-content .header-program { padding-left: .75rem; font-size: .7rem; }
+  .viewport-content .hero-content { padding: 1rem; }
+  .viewport-content .field-guide-intro { gap: .6rem; }
+  .viewport-content .field-guide-intro img { width: 45px; }
+  .viewport-content .field-guide-intro h1 { font-size: 1.5rem; }
+  .viewport-content .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; }
+  .viewport-content .article-box > img { height: 90px; }
+  .viewport-content .article-box > div { padding: .4rem; }
+  .viewport-content .article-box h2 { font-size: 1rem; margin: .2rem 0; }
+  .viewport-content .article-box p { margin-bottom: .25rem; }
+  .viewport-content .article-box .eyebrow { font-size: .65rem; }
+  .viewport-content .article-box span:last-child { font-size: .8rem; }
+  .viewport-content .guided-lesson .photo-lesson { grid-template-rows: auto auto; min-height: 0; }
+  .viewport-content .guided-lesson .lesson-photo { height: 32dvh; min-height: 200px; }
+  .viewport-content .page-controls { gap: .4rem; font-size: .85rem; }
+  .viewport-content .page-controls .btn { padding: .6rem .8rem; }
+  .viewport-content .identification { min-height: 70dvh; align-items: flex-end; }
+}
+.image-viewer .viewer-image { overflow: hidden; touch-action: none; cursor: grab; position: relative; }
+.image-viewer .viewer-image:active { cursor: grabbing; }
+.image-viewer .viewer-image img { width: 100%; height: 100%; min-height: 0; max-height: 100%; object-fit: contain; user-select: none; }
+.image-viewer .viewer-toolbar p { max-height: none; overflow: visible; }
+.viewport-content .habitat-plant:hover { transform: none; }
+
+/* Fill the photo areas consistently across all five plant covers. */
+.viewport-content .article-box > img { display: block; object-fit: cover; width: 100%; }
+/* Each discovery photo fills its half of the activity, without a frame. */
+.viewport-content .guided-lesson .photo-lesson { gap: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); min-height: calc(100dvh - 145px); }
+.viewport-content .guided-lesson .lesson-photo { min-height: calc(100dvh - 145px); }
+.viewport-content .guided-lesson .lesson-photo .annotated-plant-image img { object-fit: cover; }
+.viewport-content .guided-lesson .lesson-caption { margin-right: 1rem; }
+/* The forest extends behind the whole bog activity and the fitted screen. */
+.viewport-frame:has(.challenge-screen--find) { background: url('/images/original/1-image4.jpg') center / cover no-repeat; }
+.viewport-content .challenge-screen--find { background: transparent; }
+.viewport-content .challenge-screen--find .habitat { background: transparent; }
+.viewport-content .challenge-screen--find .site-header,
+.viewport-content .challenge-screen--find + .site-footer { background: rgba(240, 233, 217, .86); backdrop-filter: blur(8px); }
+.viewport-content .screen.challenge-screen--find .challenge-prompt { background: rgba(240, 233, 217, .82); backdrop-filter: blur(10px); color: #572700; }
+@media (max-width: 700px) {
+  .viewport-content .guided-lesson .photo-lesson { grid-template-columns: 1fr; grid-template-rows: repeat(2, 1fr); min-height: 0; gap: .5rem; }
+  .viewport-content .guided-lesson .lesson-photo { height: 100%; min-height: 50dvh; }
+  .viewport-content .guided-lesson .lesson-caption { margin-right: 0; }
+}
+
+/* Give only the Butterwort identification rounds the entire viewport. */
+.viewport-content .challenge-screen--identify + .site-footer { display: none; }
+.viewport-content .challenge-screen--identify .identification { height: 100dvh; min-height: 100dvh; background-size: contain; }
